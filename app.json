@@ -1,12 +1,35 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/hot/hot",
+    "pages/notice/notice",
+    "pages/theme/theme"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "热评",
+        "pagePath": "pages/hot/hot"
+      },
+      {
+        "text": "通知",
+        "pagePath": "pages/notice/notice"
+      },
+      {
+        "text": "主题",
+        "pagePath": "pages/theme/theme"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
