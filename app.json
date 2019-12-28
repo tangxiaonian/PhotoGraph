@@ -1,33 +1,42 @@
+
 {
   "pages": [
     "pages/index/index",
     "pages/hot/hot",
     "pages/notice/notice",
-    "pages/theme/theme"
+    "pages/theme/theme",
+    "views/search/search"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "selectedColor": "#1296db",
     "list": [
       {
         "text": "首页",
-        "pagePath": "pages/index/index"
+        "pagePath": "pages/index/index",
+        "iconPath": "/assert/img/tabbar/index.png",
+        "selectedIconPath": "/assert/img/tabbar/index_active.png"
       },
       {
-        "text": "热评",
-        "pagePath": "pages/hot/hot"
+        "text": "热榜",
+        "pagePath": "pages/hot/hot",
+        "iconPath": "/assert/img/tabbar/hot.png",
+        "selectedIconPath": "/assert/img/tabbar/hot_active.png"
       },
       {
         "text": "通知",
-        "pagePath": "pages/notice/notice"
+        "pagePath": "pages/notice/notice",
+        "iconPath": "/assert/img/tabbar/notice.png",
+        "selectedIconPath": "/assert/img/tabbar/notice_active.png"
       },
       {
         "text": "主题",
-        "pagePath": "pages/theme/theme"
+        "pagePath": "pages/theme/theme",
+        "iconPath": "/assert/img/tabbar/theme.png",
+        "selectedIconPath": "/assert/img/tabbar/theme_active.png"
       }
     ]
   },

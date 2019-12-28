@@ -2,14 +2,217 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e025f87b-8050-4732-8447-8598dec52a16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PhotoGraph.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/wx_d_ts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assert/img/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assert/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assert/img/navbar/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/action-sheet/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/action-sheet/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/action-sheet/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/action-sheet/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/alert/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/alert/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/alert/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/alert/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/avatar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/avatar/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/avatar/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/avatar/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/badge/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/badge/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/badge/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/badge/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/base/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/button/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/button/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/button/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/button/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/card/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/card/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/card/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/card/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/cell-group/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/cell-group/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/cell-group/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/cell/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/cell/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/cell/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/cell/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/checkbox-group/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/checkbox-group/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/checkbox-group/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/checkbox-group/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/checkbox/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/checkbox/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/checkbox/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/checkbox/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/col/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/col/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/col/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/col/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/collapse-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/collapse-item/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/collapse-item/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/collapse-item/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/collapse/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/collapse/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/collapse/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/collapse/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/count-down/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/count-down/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/count-down/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/count-down/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/divider/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/divider/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/divider/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/divider/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/drawer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/drawer/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/drawer/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/drawer/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-icon/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-icon/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-icon/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-icon/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-item/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-item/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-item/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-label/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-label/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-label/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid-label/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/grid/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/icon/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/icon/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/icon/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/icon/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/index-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/index-item/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/index-item/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/index-item/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/index/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/index/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/index/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/index/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/input-number/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/input-number/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/input-number/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/input-number/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/input/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/input/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/input/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/input/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/load-more/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/load-more/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/load-more/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/load-more/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/message/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/message/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/message/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/message/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/modal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/modal/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/modal/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/modal/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/notice-bar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/notice-bar/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/notice-bar/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/notice-bar/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/page/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/page/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/page/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/page/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/panel/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/panel/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/panel/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/panel/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/progress/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/progress/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/progress/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/progress/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/radio-group/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/radio-group/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/radio-group/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/radio-group/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/radio/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/radio/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/radio/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/radio/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/rate/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/rate/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/rate/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/rate/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/row/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/row/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/row/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/row/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/slide/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/slide/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/slide/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/slide/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/spin/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/spin/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/spin/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/spin/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/step/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/step/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/step/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/step/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/steps/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/steps/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/steps/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/steps/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/sticky-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/sticky-item/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/sticky-item/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/sticky-item/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/sticky/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/sticky/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/sticky/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/sticky/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/swipeout/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/swipeout/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/swipeout/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/swipeout/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/switch/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/switch/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/switch/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/switch/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab-bar-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab-bar-item/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab-bar-item/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab-bar-item/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab-bar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab-bar/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab-bar/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab-bar/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tab/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tabs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tabs/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tabs/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tabs/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tag/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tag/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tag/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/tag/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/toast/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/toast/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/toast/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/iview/dist/toast/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,17 +224,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.json">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/common/w-switchtab/w-switchtab.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="374">
+              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/component/common/w-switchtab/w-switchtab.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/common/w-switchtab/w-switchtab.wxss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>l`</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,23 +265,39 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/component/common/w-navbar/w-navbar.json" />
+        <option value="$PROJECT_DIR$/component/common/w-navbar/w-navbar.js" />
+        <option value="$PROJECT_DIR$/views/search/search.js" />
+        <option value="$PROJECT_DIR$/views/search/search.json" />
+        <option value="$PROJECT_DIR$/views/search/search.wxml" />
+        <option value="$PROJECT_DIR$/views/search/search.wxss" />
+        <option value="$PROJECT_DIR$/component/common/w-navbar/w-navbar.wxml" />
         <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/app.wxss" />
+        <option value="$PROJECT_DIR$/pages/index/index.wxml" />
+        <option value="$PROJECT_DIR$/pages/index/index.json" />
+        <option value="$PROJECT_DIR$/pages/index/index.wxss" />
+        <option value="$PROJECT_DIR$/component/common/w-switchtab/w-switchtab.wxss" />
+        <option value="$PROJECT_DIR$/component/common/w-navbar/w-navbar.wxss" />
+        <option value="$PROJECT_DIR$/component/common/w-switchtab/w-switchtab.wxml" />
+        <option value="$PROJECT_DIR$/component/common/w-switchtab/w-switchtab.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="229" />
-    <option name="y" value="108" />
+    <option name="x" value="418" />
+    <option name="y" value="59" />
     <option name="width" value="1597" />
-    <option name="height" value="977" />
+    <option name="height" value="1016" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="WxProject" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -63,19 +305,88 @@
               <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="assert" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="assert" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="w-navbar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="w-switchtab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="WxProject" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/theme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assert/img" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\小程序项目目录\PhotoGraph\assert\img" />
+      <recent name="G:\小程序项目目录\PhotoGraph\library\iview" />
+      <recent name="G:\小程序项目目录\PhotoGraph\assert\img\navbar" />
+      <recent name="G:\小程序项目目录\PhotoGraph\pages\theme" />
+      <recent name="G:\小程序项目目录\PhotoGraph\pages\notice" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -99,23 +410,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577431801142</updated>
-      <workItem from="1577431802315" duration="1370000" />
+      <workItem from="1577431802315" duration="8548000" />
+      <workItem from="1577449082905" duration="6328000" />
+      <workItem from="1577501004149" duration="4490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1370000" />
+    <option name="totallyTimeSpent" value="19366000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="229" y="108" width="1597" height="977" extended-state="0" />
+    <frame x="418" y="59" width="1597" height="1016" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16459017" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18754098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -123,10 +433,14 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Word Book" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Word Book" order="3" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,10 +455,134 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/iview/dist/col/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assert/img/navbar/user.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/search/search.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/search/search.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="1312" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/search/search.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assert/img/2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="242">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/index.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/common/w-navbar/w-navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/common/w-navbar/w-navbar.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/common/w-navbar/w-navbar.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/common/w-navbar/w-navbar.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/common/w-switchtab/w-switchtab.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/common/w-switchtab/w-switchtab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/common/w-switchtab/w-switchtab.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>

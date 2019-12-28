@@ -1,0 +1,15 @@
+/* component/common/w-navbar/w-navbar.wxss */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60rpx;padding: 8rpx;
+    border: 1px solid #F8F8F8;
+}
+
+.navbar-center{
+    flex: 1;
+}
+.navbar-right{
+    width: 50rpx;
+}

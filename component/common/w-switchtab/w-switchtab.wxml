@@ -1,0 +1,68 @@
+<view class="switchtab-container">
+
+    <view class="switchtab-top">
+
+        <view class="navbar">
+
+            <view
+                    wx:for="{{titles}}"
+                    class="navbar-item"
+                    wx:key="index"
+                    data-index="{{index}}"
+                    bind:tap="handlerClick">
+                {{item}}
+            </view>
+
+        </view>
+
+        <view class="navba-slider"
+              style="transform:translateX({{offsetWidth}}px);"></view>
+
+    </view>
+
+    <view class="switchtab-body"
+          style="height: calc({{windowHeight}}px - 75rpx - 70rpx - 8rpx)">
+
+        <swiper
+                bind:change="changeItem"
+                current="{{current}}"
+        >
+
+            <swiper-item>
+
+                <scroll-view scroll-y>
+
+
+                    <view wx:for="{{30}}">页面1</view>
+
+
+                </scroll-view>
+
+
+            </swiper-item>
+
+            <swiper-item>
+
+                <scroll-view scroll-y>
+
+                    <view wx:for="{{30}}">页面2</view>
+
+                </scroll-view>
+
+
+            </swiper-item>
+
+            <swiper-item>
+                <scroll-view scroll-y>
+
+                    <view wx:for="{{30}}">页面3</view>
+
+                </scroll-view>
+
+            </swiper-item>
+
+        </swiper>
+
+    </view>
+
+</view>

@@ -1,2 +1,32 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<w-navbar>
+
+    <view slot="left">
+        <!--    用户登录，显示头像    -->
+        <block wx:if="{{false}}">
+            <view class="avatar_view">
+                <image src="/assert/img/1.jpeg"></image>
+            </view>
+        </block>
+
+        <block wx:else>
+            <view class="avatar_view">
+                <image src="/assert/img/2.png"></image>
+            </view>
+        </block>
+    </view>
+    <view slot="center">
+
+        <view class="search-bar">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="search-bar_input"
+                   placeholder="搜索"
+                   disabled
+                   bind:tap="handlerClickSearBar"
+            />
+        </view>
+
+    </view>
+</w-navbar>
+
+<w-switchtab titles="{{['关注','推荐','热门']}}"></w-switchtab>

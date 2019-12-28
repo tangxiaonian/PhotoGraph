@@ -1,3 +1,12 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-navbar": "/component/common/w-navbar/w-navbar",
+    "w-switchtab": "/component/common/w-switchtab/w-switchtab",
+
+    "i-avatar": "/library/iview/dist/avatar/index"
+  },
+  "navigationBarTitleText": "首页",
+  "navigationStyle":"default",
+  "navigationBarBackgroundColor": "#1296db"
+
 }

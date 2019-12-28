@@ -1,0 +1,30 @@
+/* component/common/w-switchtab/w-switchtab.wxss */
+.switchtab-top{
+    background-color: white;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 70rpx;
+    /*background-color: #1296db;*/
+}
+.navbar view{
+    color: #1296db;
+}
+.navbar-item{
+    flex: 1;
+    line-height: 70rpx;
+    text-align: center;
+    color: white;
+}
+
+.navba-slider{
+    width: 70rpx;
+    height: 4rpx;
+    background-color: #1296db;
+    transition: all .5s;
+}
+
+.switchtab-body swiper,.switchtab-body scroll-view {
+    height: 100%;
+}
