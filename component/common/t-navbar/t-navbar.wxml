@@ -1,0 +1,20 @@
+<!--component/common/t-navbar/t-navbar.wxml-->
+<view class="t-navbar" style="height:{{navbarHeight}}px;">
+
+    <view class="t-navbar-content" style="padding-top:{{statusBarHeight}}px;height:{{navbarHeight}}px;">
+
+        <view class="t-navbar-left">
+            <slot name="left"></slot>
+        </view>
+
+        <view class="t-navbar-center">
+            <slot name="center"></slot>
+        </view>
+
+        <view class="t-navbar-right">
+            <slot name="right"></slot>
+        </view>
+
+    </view>
+
+</view>

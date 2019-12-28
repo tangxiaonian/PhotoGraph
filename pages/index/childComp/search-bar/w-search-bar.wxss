@@ -1,15 +1,15 @@
-/* component/common/w-navbar/w-navbar.wxss */
-.navbar{
+.w-search-navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 60rpx;padding: 8rpx;
+    height: 90rpx;padding: 8rpx;
     border: 1px solid #F8F8F8;
+    background-color: white;
 }
 
-.navbar-center{
+.w-search-navbar-center{
     flex: 1;
 }
-.navbar-right{
+.w-search-navbar-right{
     width: 50rpx;
 }

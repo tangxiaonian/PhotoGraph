@@ -1,6 +1,7 @@
 /* pages/index/index.wxss */
 
-.avatar_view {
+/* 头像 */
+.t_avatar_view {
     width: 70rpx;
     height: 70rpx;
     margin: 0 10rpx;
@@ -10,11 +11,12 @@
     overflow: hidden;
 }
 
-.avatar_view image {
+.t_avatar_view image {
     width: 100%;
     height: 100%;
 }
 
+/* 搜索区 */
 .search-bar {
     display: flex;
     align-items: center;
@@ -28,3 +30,4 @@
 .search-bar_input {
     width: 100%;
 }
+

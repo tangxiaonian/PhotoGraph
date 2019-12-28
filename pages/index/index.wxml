@@ -1,20 +1,32 @@
 <!--pages/index/index.wxml-->
-<w-navbar>
+<!-- 导航栏 -->
+<t-navbar>
+    <view slot="center">
+        首页
+    </view>
+</t-navbar>
+
+<!-- 搜索区 -->
+
+<w-search-navbar>
 
     <view slot="left">
+
         <!--    用户登录，显示头像    -->
         <block wx:if="{{false}}">
-            <view class="avatar_view">
+            <view class="t_avatar_view">
                 <image src="/assert/img/1.jpeg"></image>
             </view>
         </block>
 
         <block wx:else>
-            <view class="avatar_view">
+            <view class="t_avatar_view">
                 <image src="/assert/img/2.png"></image>
             </view>
         </block>
+
     </view>
+
     <view slot="center">
 
         <view class="search-bar">
@@ -27,6 +39,9 @@
         </view>
 
     </view>
-</w-navbar>
+
+</w-search-navbar>
+
+<!-- 切换tab -->
 
 <w-switchtab titles="{{['关注','推荐','热门']}}"></w-switchtab>

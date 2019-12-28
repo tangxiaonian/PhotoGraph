@@ -1,4 +1,3 @@
-// component/common/w-navbar/w-navbar.js
 Component({
 
   options: {

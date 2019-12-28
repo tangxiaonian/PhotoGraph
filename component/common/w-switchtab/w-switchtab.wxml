@@ -21,7 +21,7 @@
     </view>
 
     <view class="switchtab-body"
-          style="height: calc({{windowHeight}}px - 75rpx - 70rpx - 8rpx)">
+          style="height: calc({{windowHeight}}px - {{navbarHeight}}px - 90rpx - 75rpx)">
 
         <swiper
                 bind:change="changeItem"

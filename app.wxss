@@ -1,4 +1,3 @@
 /**app.wxss**/
-/*page{*/
-/*    background-color: #EDEDED;*/
-/*}*/
+@import "library/colorui/main.wxss";
+@import "library/colorui/icon.wxss";

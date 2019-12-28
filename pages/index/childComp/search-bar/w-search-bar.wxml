@@ -1,0 +1,15 @@
+<view class="w-search-navbar">
+
+    <view class="w-search-navbar-left">
+        <slot name="left"></slot>
+    </view>
+
+    <view class="w-search-navbar-center">
+        <slot name="center"></slot>
+    </view>
+
+    <view class="w-search-navbar-right">
+        <slot name="right"></slot>
+    </view>
+
+</view>

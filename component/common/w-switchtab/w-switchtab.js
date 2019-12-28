@@ -1,4 +1,6 @@
 // component/common/w-switchtab/w-switchtab.js
+let app = getApp();
+
 Component({
   /**
    * 组件的属性列表
@@ -19,7 +21,8 @@ Component({
     current:0,  // 当前轮播图位置
     screenWidth: 0, // 屏幕宽度
     windowHeight:0, // 屏幕可用区高度
-    offsetWidth:0 // 偏移值
+    offsetWidth:0, // 偏移值
+    navbarHeight: app.globalData.customNavBarHeight
   },
 
   "lifetimes":{
