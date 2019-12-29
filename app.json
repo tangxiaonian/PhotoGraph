@@ -4,7 +4,8 @@
     "pages/hot/hot",
     "pages/notice/notice",
     "pages/theme/theme",
-    "views/search/search"
+    "views/search/search",
+    "pages/info/info"
   ],
   "window": {
     "navigationStyle": "default"
@@ -25,16 +26,22 @@
         "selectedIconPath": "/assert/img/tabbar/hot_active.png"
       },
       {
+        "text": "主题",
+        "pagePath": "pages/theme/theme",
+        "iconPath": "/assert/img/tabbar/theme.png",
+        "selectedIconPath": "/assert/img/tabbar/theme_active.png"
+      },
+      {
         "text": "通知",
         "pagePath": "pages/notice/notice",
         "iconPath": "/assert/img/tabbar/notice.png",
         "selectedIconPath": "/assert/img/tabbar/notice_active.png"
       },
       {
-        "text": "主题",
-        "pagePath": "pages/theme/theme",
-        "iconPath": "/assert/img/tabbar/theme.png",
-        "selectedIconPath": "/assert/img/tabbar/theme_active.png"
+        "text": "信息",
+        "pagePath": "pages/info/info",
+        "iconPath": "/assert/img/tabbar/info.png",
+        "selectedIconPath": "/assert/img/tabbar/info_active.png"
       }
     ]
   },

@@ -10,6 +10,6 @@
 .w-search-navbar-center{
     flex: 1;
 }
-.w-search-navbar-right{
+.w-search-navbar-right,.w-search-navbar-left{
     width: 50rpx;
 }

@@ -33,8 +33,6 @@ Component({
 
       this.data.screenWidth = res.screenWidth;
 
-      console.log(res.windowHeight);
-
       // 2个选项 分为4份
       this.setData({
         offsetWidth: (res.screenWidth / (this.data.titles.length * 2)) - 15, // - 偏移量

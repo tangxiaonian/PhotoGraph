@@ -49,9 +49,17 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
-					"name": "views/search/search",
+					"id": 0,
+					"name": "search",
 					"pathName": "views/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "info",
+					"pathName": "pages/info/info",
+					"query": "",
 					"scene": null
 				}
 			]

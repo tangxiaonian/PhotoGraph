@@ -1,6 +1,7 @@
 /* component/common/w-switchtab/w-switchtab.wxss */
 .switchtab-top{
     background-color: white;
+    box-shadow: 0 8rpx 8rpx #888888 ;
 }
 .navbar{
     display: flex;
@@ -9,6 +10,7 @@
     /*background-color: #1296db;*/
 }
 .navbar view{
+    font-size: 16px;
     color: #1296db;
 }
 .navbar-item{
@@ -20,7 +22,7 @@
 
 .navba-slider{
     width: 70rpx;
-    height: 4rpx;
+    height: 8rpx;
     background-color: #1296db;
     transition: all .5s;
 }

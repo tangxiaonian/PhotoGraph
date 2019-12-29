@@ -21,19 +21,18 @@
     </view>
 
     <view class="switchtab-body"
-          style="height: calc({{windowHeight}}px - {{navbarHeight}}px - 90rpx - 75rpx)">
+          style="height: calc({{windowHeight}}px - {{navbarHeight}}px - 90rpx - 80rpx)">
 
         <swiper
                 bind:change="changeItem"
                 current="{{current}}"
         >
-
             <swiper-item>
 
                 <scroll-view scroll-y>
 
 
-                    <view wx:for="{{30}}">页面1</view>
+                    <view wx:for="{{30}}" wx:key="index">页面1</view>
 
 
                 </scroll-view>
@@ -45,17 +44,7 @@
 
                 <scroll-view scroll-y>
 
-                    <view wx:for="{{30}}">页面2</view>
-
-                </scroll-view>
-
-
-            </swiper-item>
-
-            <swiper-item>
-                <scroll-view scroll-y>
-
-                    <view wx:for="{{30}}">页面3</view>
+                    <view wx:for="{{30}}" wx:key="index">页面2</view>
 
                 </scroll-view>
 
