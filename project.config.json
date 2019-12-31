@@ -4,15 +4,23 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
 		"coverView": true,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
@@ -50,15 +58,50 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "search",
+					"name": "搜索页面",
 					"pathName": "views/search/search",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "info",
+					"id": 1,
+					"name": "个人信息页",
 					"pathName": "pages/info/info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "说说详情页",
+					"pathName": "views/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布页面",
+					"pathName": "views/public/public",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "热榜页面",
+					"pathName": "pages/hot/hot",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "主题页面",
+					"pathName": "pages/theme/theme",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "通知页面",
+					"pathName": "pages/notice/notice",
 					"query": "",
 					"scene": null
 				}

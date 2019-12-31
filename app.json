@@ -5,7 +5,9 @@
     "pages/notice/notice",
     "pages/theme/theme",
     "views/search/search",
-    "pages/info/info"
+    "pages/info/info",
+    "views/detail/detail",
+    "views/public/public"
   ],
   "window": {
     "navigationStyle": "default"

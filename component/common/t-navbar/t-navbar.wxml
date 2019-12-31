@@ -1,5 +1,7 @@
 <!--component/common/t-navbar/t-navbar.wxml-->
-<view class="t-navbar" style="height:{{navbarHeight}}px;">
+
+
+<view class="t-navbar" style="height:{{navbarHeight}}px;background-image: var({{bgColor}});">
 
     <view class="t-navbar-content" style="padding-top:{{statusBarHeight}}px;height:{{navbarHeight}}px;">
 

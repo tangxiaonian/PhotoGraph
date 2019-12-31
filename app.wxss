@@ -1,3 +1,4 @@
 /**app.wxss**/
 @import "library/colorui/main.wxss";
 @import "library/colorui/icon.wxss";
+@import "assert/css/photo.wxss";

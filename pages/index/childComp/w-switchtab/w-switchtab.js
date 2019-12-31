@@ -1,7 +1,10 @@
 // component/common/w-switchtab/w-switchtab.js
 let app = getApp();
-
 Component({
+
+  options: {
+    "multipleSlots": true
+  },
   /**
    * 组件的属性列表
    */
@@ -35,7 +38,7 @@ Component({
 
       // 2个选项 分为4份
       this.setData({
-        offsetWidth: (res.screenWidth / (this.data.titles.length * 2)) - 15, // - 偏移量
+        offsetWidth: (res.screenWidth / (this.data.titles.length * 2)) - 20, // - 偏移量
         windowHeight: res.windowHeight
       });
 
@@ -68,7 +71,7 @@ Component({
       index = index + (index + 1);
 
       this.setData({
-        offsetWidth: (this.data.screenWidth / (this.data.titles.length * 2) ) * index - 15
+        offsetWidth: (this.data.screenWidth / (this.data.titles.length * 2) ) * index - 20
       });
 
     }

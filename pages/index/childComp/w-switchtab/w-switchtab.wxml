@@ -31,12 +31,9 @@
 
                 <scroll-view scroll-y>
 
-
-                    <view wx:for="{{30}}" wx:key="index">页面1</view>
-
+                    <slot name="recommend"></slot>
 
                 </scroll-view>
-
 
             </swiper-item>
 
@@ -44,7 +41,7 @@
 
                 <scroll-view scroll-y>
 
-                    <view wx:for="{{30}}" wx:key="index">页面2</view>
+                    <slot name="attention"></slot>
 
                 </scroll-view>
 

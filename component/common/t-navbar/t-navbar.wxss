@@ -1,7 +1,6 @@
 /* component/common/t-navbar/t-navbar.wxss */
 .t-navbar{
     width: 100%;
-    background-image: var(--gradualBlue);
 }
 .t-navbar-content{
     display: flex;

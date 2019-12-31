@@ -1,67 +1,48 @@
 <!--pages/index/index.wxml-->
-<scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
 
-    <!-- 导航栏 -->
-    <t-navbar>
-        <view slot="center">
-            首页
-        </view>
-    </t-navbar>
+<!-- 导航栏 -->
+<t-navbar>
+    <view slot="center">
+        首页
+    </view>
+</t-navbar>
 
-    <!-- 搜索区 -->
-    <w-search-navbar>
+<!-- 搜索区 -->
+<w-search-navbar>
 
-        <view slot="center">
+    <view slot="center">
 
-            <view class="search-bar" bind:tap="goSearch">
-                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                <input type="text" class="search-bar_input"
-                       placeholder="搜索"
-                       disabled
-                />
-            </view>
-
-        </view>
-
-    </w-search-navbar>
-
-    <!-- 切换tab -->
-    <w-switchtab titles="{{['推荐','关注']}}"></w-switchtab>
-
-</scroll-view>
-
-        <!-- DrawerClose -->
-<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
-    <text class="cuIcon-pullright"></text>
-</view>
-
-        <!-- Drawer 部分 -->
-<scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}} bg-gradual-blue">
-
-    <!--  list列表  -->
-    <view class="cu-bar solid-bottom margin-top">
-
-        <view class="cu-list card-menu menu" style="width:100%;">
-
-            <view class="cu-item arrow">
-                <view class="content_">
-                    <text class="cuIcon-circlefill text-grey"></text>
-                    <text class="text-grey">图标 + 标题</text>
-                </view>
-            </view>
-
-            <view class="cu-item arrow">
-                <view class="content_">
-                    <text class="cuIcon-circlefill text-grey"></text>
-                    <text class="text-grey">图标 + 标题</text>
-                </view>
-            </view>
-
+        <view class="search-bar" bind:tap="goSearch">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="search-bar_input"
+                   placeholder="搜索用户，主题，内容"
+                   disabled
+            />
         </view>
 
     </view>
 
-</scroll-view>
+</w-search-navbar>
 
+<!-- 切换tab -->
+<w-switchtab titles="{{['推荐','关注']}}">
+
+    <view slot="recommend">
+
+        <t-card></t-card>
+        <t-card></t-card>
+        <t-card></t-card>
+
+    </view>
+
+    <view slot="attention">
+
+        <t-card></t-card>
+        <t-card></t-card>
+        <t-card></t-card>
+
+    </view>
+
+</w-switchtab>
 
 
