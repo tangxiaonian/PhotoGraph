@@ -1,0 +1,160 @@
+<view id="box" bind:tap="handlerClickPage">
+
+    <!-- 导航栏 -->
+    <t-navbar>
+        <view slot="center" bgColor="--gradualOrange">
+            详情页
+        </view>
+    </t-navbar>
+
+    <!--  t-top  -->
+    <t-top></t-top>
+
+    <view class="cu-list menu-avatar title-float"
+          hidden="{{isTitleHidden}}"
+          style="top:{{navbarHeight}}px">
+        <view class="cu-item">
+            <view class="cu-avatar round lg"
+                  style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+            <view class="content flex-sub">
+                <view>凯尔</view>
+                <view class="text-gray text-sm flex justify-between">
+                    2019年12月3日
+                </view>
+            </view>
+            <view class="left-btn-class">
+                <text>关注</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 内容 (抽取)-->
+    <scroll-view
+            lower-threshold="{{100}}"
+            upper-threshold="{{100}}"
+            bindscrolltolower="bindScrollToLower"
+            bindscroll="bodyScroll"
+            scroll-y
+            style="height:{{windowHeight - navbarHeight}}px;">
+
+        <view class="cu-card dynamic">
+
+            <view class="cu-item shadow">
+
+                <!--标题头 (抽取)-->
+                <view class="cu-list menu-avatar">
+                    <view class="cu-item">
+                        <view class="cu-avatar round lg"
+                              style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+                        <view class="content flex-sub">
+                            <view>凯尔</view>
+                            <view class="text-gray text-sm flex justify-between">
+                                2019年12月3日
+                            </view>
+                        </view>
+                        <view class="left-btn-class">
+                            <text>关注</text>
+                        </view>
+                    </view>
+                </view>
+                <!--内容 (抽取)-->
+                <view class="text-content">
+                    折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！
+                </view>
+
+                <view class="grid flex-sub padding-lr col-1">
+
+                    <view class="bg-img only-img"
+                          style="background-image:url(/assert/img/test/big10006.jpg);">
+                    </view>
+
+                    <view class="bg-img only-img"
+                          style="background-image:url(/assert/img/test/big10006.jpg);">
+                    </view>
+
+                </view>
+                <!---->
+                <view class="text-gray text-xl text-right padding">
+                    <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+                    <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+                    <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+                </view>
+
+                <!--点赞列表 (抽取)-->
+                <view class="t_good_list">
+
+                    <text class="cuIcon-appreciatefill margin-lr-xs" style="font-size:35rpx;"></text>
+
+                    <view class="t_good_list_right">
+                        <text>小唐，</text>
+                        <text>小王，</text>
+                        <text>小军，等</text>
+                    </view>
+
+                </view>
+
+                <!--评论区 (抽取)-->
+                <text class="comment">评论:</text>
+
+                <view class="comment-list">
+
+                    <view class="comment-item" wx:for="{{3}}">
+
+                        <view class="comment-item-top">
+                            <view class="t_avatar" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+                            <text class="t_name">少年不再年少</text>
+                            <text class="cuIcon-appreciatefill margin-lr-xs t_good"></text>12
+                        </view>
+
+                        <view class="comment-item-content">
+                            <text>今天天气真好!</text>
+                        </view>
+
+                        <view class="comment-item-bottom">
+                            <text class="t_time">10:41</text>
+                            <text class="t_receive">回复</text>
+                        </view>
+
+                    </view>
+
+                </view>
+
+                <!--    加载结束  提示      -->
+                <view class="cu-load {{!isCommentLoad?'loading':'over'}}"></view>
+
+                <view style="height: 100rpx;"></view>
+
+            </view>
+        </view>
+
+    </scroll-view>
+
+</view>
+
+<!-- 顶部进度条 (抽取)-->
+<view class='load-progress {{loadProgress!=0?"show":"hide"}}' style="top:{{navbarHeight}}px;">
+    <view class='load-progress-bar bg-green'
+          style="transform: translate3d(-{{100-loadProgress}}%, 0px, 0px);"></view>
+    <view class='load-progress-spinner text-green'></view>
+</view>
+
+
+<!-- 底部操作栏 -->
+<t-bottombar
+        bind:dispalyCommentbar="dispalyCommentbar"
+        hidden="{{isBottomBarHidden}}">
+</t-bottombar>
+
+<!-- 底部评论栏 -->
+<t-commentbar
+        id="t-commentbar"
+        bind:dispalyBottombar="dispalyBottombar"
+        bind:dispalyEmojiPanel="dispalyEmojiPanel"
+        bind:hiddenEmojiPanel="hiddenEmojiPanel"
+        hidden="{{isCommentBarHidden}}">
+</t-commentbar>
+
+<!--表情面板-->
+<t-emopanel hidden="{{isEmoPanel}}"
+            panelHeight="{{panelHeight}}">
+</t-emopanel>

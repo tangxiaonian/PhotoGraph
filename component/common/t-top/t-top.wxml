@@ -1,0 +1,6 @@
+<!--component/common/t-top/t-top.wxml-->
+<view class="t-top">
+
+    <text>top</text>
+
+</view>

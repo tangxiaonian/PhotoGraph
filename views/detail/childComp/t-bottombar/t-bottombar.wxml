@@ -1,0 +1,24 @@
+<!--views/detail/childComp/t-bottombar/t-bottombar.wxml-->
+<view class="t-bottombar" hidden="{{hidden}}">
+
+    <view class="left">
+
+        <view class="left-input" bind:tap="handlerClickInput">
+            <text class="text_content">网络一线牵，珍惜这段缘...</text>
+        </view>
+
+    </view>
+
+    <view class="right">
+
+        <view class="goodImg">
+            <view class="iconfont icon-zan"></view>
+        </view>
+
+        <view class="shareImg">
+            <view class="iconfont icon-fenxiang"></view>
+        </view>
+
+    </view>
+
+</view>

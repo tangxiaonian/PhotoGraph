@@ -1,0 +1,30 @@
+/* views/detail/childComp/t-emopanel/t-emopanel.wxss */
+.t-emopanel{
+    position: fixed;
+    left: 0;bottom: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.t-emopanel scroll-view{
+    height: 100%;
+}
+
+.emoji-table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.emoji-cell{
+    width: 14%;
+    height: 60rpx;
+    margin: 10rpx;
+    text-align: center;
+}
+.emoji-cell image{
+    width: 60rpx;
+    height: 100%;
+}

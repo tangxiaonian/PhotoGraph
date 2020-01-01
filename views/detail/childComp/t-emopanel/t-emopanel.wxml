@@ -1,0 +1,16 @@
+<!--views/detail/childComp/t-emopanel/t-emopanel.wxml-->
+<view class="t-emopanel"
+      style="height: {{panelHeight}}px"
+      hidden="{{hidden}}">
+
+    <scroll-view scroll-y>
+        <view class="emoji-table">
+
+            <view class="emoji-cell" wx:for="{{30}}" wx:key="index">
+                <image src="https://shouheng.oss-cn-beijing.aliyuncs.com/emoji/{{item+1}}.jpg"></image>
+            </view>
+
+        </view>
+    </scroll-view>
+
+</view>

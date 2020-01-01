@@ -1,0 +1,13 @@
+/* component/common/t-top/t-top.wxss */
+.t-top{
+    position: fixed;
+    bottom: 185rpx;right: 45rpx;
+    width: 100rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    color: white;
+    background-color: var(--cyan);
+    border-radius: 200rpx;
+    z-index: 1;
+}

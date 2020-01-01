@@ -1,0 +1,86 @@
+/* views/detail/detail.wxss */
+
+/* 浮动的title */
+.title-float {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5rpx 5rpx 5rpx #8888;
+    z-index: 1;
+}
+
+/* 卡片 */
+.cu-card>.cu-item{
+    margin: 0;
+}
+
+/* 关注按钮 */
+.left-btn-class{
+    position: absolute;
+    right: 20px;
+    width: 200rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 150rpx;
+}
+
+/* 点赞区 */
+
+.t_good_list{
+    margin: 10rpx 0;
+}
+
+.t_good_list .t_good_list_right{
+    display: inline-block;
+}
+
+/*评论区*/
+
+.comment{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.comment-item{
+    border-bottom: 1px solid #ededed;
+    margin: 10rpx;
+}
+.comment-item-top{
+    display: flex;
+    align-items: center;
+}
+.comment-item-top .t_avatar{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 60rpx;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.comment-item-top .t_name{
+    flex: 1;
+    margin: 10rpx;
+    color: blue;
+}
+.comment-item-top .t_good{
+    font-size: 23px;
+}
+
+.comment-item-content{
+    padding-left: 60rpx;
+    margin: 10rpx 0;
+}
+
+.comment-item-bottom {
+    padding-left: 60rpx;
+}
+
+.comment-item-bottom .t_time{
+    color: #B1B1B1;
+}
+.comment-item-bottom .t_receive{
+    margin-left: 20rpx;
+    color: #B1B1B1;
+}

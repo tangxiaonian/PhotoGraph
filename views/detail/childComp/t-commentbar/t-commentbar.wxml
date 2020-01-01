@@ -1,0 +1,49 @@
+<!--views/detail/childComp/t-commentbar/t-commentbar.wxml-->
+
+<view class="t-commentbar"
+      hidden="{{hidden}}"
+      style="bottom:{{distanceBottom}}px">
+
+    <view class="left">
+
+        <view bind:tap="clickKeyBoard"
+              class="left-jianpan">
+
+            <view wx:if="{{isClickKeyBoard}}"
+                  style="color: blue;"
+                  class="iconfont icon-jianpan"></view>
+
+            <view wx:else
+                  class="iconfont icon-jianpan"></view>
+        </view>
+
+        <view class="left-biaoqing" bind:tap="clickEmoji">
+
+            <view wx:if="{{!isClickEmoji}}"
+                  class="iconfont icon-biaoqing"></view>
+
+            <view wx:else
+                  class="iconfont icon-biaoqing-copy"
+                  style="color: blue;"></view>
+
+        </view>
+
+    </view>
+
+
+    <view class="center">
+        <input class="weui-input"
+               disabled="{{isDisable}}"
+               bindfocus="bindFocus"
+               bindblur="bindBlur"
+               cursor-spacing="{{100}}"
+               adjust-position="{{false}}"
+               focus="{{isFocus}}"
+               placeholder="留点信息吧..."/>
+    </view>
+
+    <view class="right" bind:tap="sendMsg">
+        <view class="iconfont icon-fasong"></view>
+    </view>
+
+</view>
