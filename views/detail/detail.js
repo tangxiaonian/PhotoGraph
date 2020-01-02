@@ -91,6 +91,10 @@ Page({
 
   },
 
+  // 点击了表情按钮,重新设置input的内容
+  handlerClickEmoji(event) {
+    this.data.tCommentBarInstance.setEmoji(event.detail.emoji);
+  },
   // t-bottombar 点击了输入框 隐藏当前，显示 t-commentbar
   dispalyCommentbar() {
 
@@ -103,13 +107,17 @@ Page({
     this.data.tCommentBarInstance.getSetInputFocus();
 
   },
-  // 显示 t-bottombar 隐藏 t-commentbar
+  // 显示最原先状态 t-bottombar 隐藏 t-commentbar t-emopanel
   dispalyBottombar() {
 
     this.setData({
       isCommentBarHidden: true,
-      isBottomBarHidden: false
+      isBottomBarHidden: false,
+      isEmoPanel: true
     });
+
+    // 还原 tCommentBar 数据状态
+    this.data.tCommentBarInstance.initParamsMethod();
 
   },
   // 隐藏表情面板

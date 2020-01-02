@@ -25,7 +25,17 @@ Component({
     /**
      * 组件的方法列表
      */
-    methods: {},
+    methods: {
+
+        handlerClickEmoji(event) {
+
+            let emoji = this.data.emoji[event.currentTarget.dataset.index];
+
+            this.triggerEvent("handlerClickEmoji", {
+                emoji
+            });
+        }
+    },
     "lifetimes": {
         // 组件实例刚刚被创建时执行
         created() {

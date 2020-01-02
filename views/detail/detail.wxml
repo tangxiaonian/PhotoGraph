@@ -138,7 +138,6 @@
     <view class='load-progress-spinner text-green'></view>
 </view>
 
-
 <!-- 底部操作栏 -->
 <t-bottombar
         bind:dispalyCommentbar="dispalyCommentbar"
@@ -156,5 +155,6 @@
 
 <!--表情面板-->
 <t-emopanel hidden="{{isEmoPanel}}"
+            bind:handlerClickEmoji="handlerClickEmoji"
             panelHeight="{{panelHeight}}">
 </t-emopanel>

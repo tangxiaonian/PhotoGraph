@@ -33,12 +33,14 @@
 
     <view class="center">
         <input class="weui-input"
+               value="{{textContent}}"
                disabled="{{isDisable}}"
+               focus="{{isFocus}}"
+               bindinput="bindInputChange"
                bindfocus="bindFocus"
                bindblur="bindBlur"
                cursor-spacing="{{100}}"
                adjust-position="{{false}}"
-               focus="{{isFocus}}"
                placeholder="留点信息吧..."/>
     </view>
 

@@ -12,7 +12,7 @@ Component({
         hidden: {
             type: Boolean,
             value: true
-        }
+        },
 
     },
     /**
@@ -21,6 +21,9 @@ Component({
     data: {
         distanceBottom: 0, // 评论框距离底部的高度
         keyBoardHeight: 0, // 键盘的高度
+
+        textContent: "", // 输入的内容
+
         isFocus: false, // 是否获取焦点
         isClickEmoji: false, //是否点击了表情按钮
         isClickKeyBoard: true, //是否点击了键盘按钮
@@ -172,6 +175,37 @@ Component({
                     keyBoardHeight: this.data.keyBoardHeight,
                 });
             }
+        },
+        // 点击了发送信息按钮
+        sendMsg() {
+
+            console.log("点击了发送信息...");
+
+
+            // 隐藏当前
+            this.setData({
+                distanceBottom: 0,
+                isFocus: false,
+                textContent:"" // 清空内容
+            });
+
+            // 通知 唤醒 t-bottombar
+            this.triggerEvent("dispalyBottombar");
+        },
+        // 文本框数据发生改变
+        bindInputChange(event) {
+
+            console.log(event);
+
+            this.data.textContent = event.detail.value;
+        },
+        // 设置表情
+        setEmoji(emoji) {
+
+            this.setData({
+                textContent: this.data.textContent + emoji + ""
+            });
         }
     }
+
 });

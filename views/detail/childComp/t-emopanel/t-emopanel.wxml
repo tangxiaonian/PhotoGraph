@@ -6,7 +6,11 @@
     <scroll-view scroll-y>
         <view class="emoji-table">
 
-            <view class="emoji-cell" wx:for="{{30}}" wx:key="index">
+            <view class="emoji-cell"
+                  wx:for="{{30}}"
+                  wx:key="index"
+                  data-index="{{index}}"
+                  bind:tap="handlerClickEmoji">
                 <image src="https://shouheng.oss-cn-beijing.aliyuncs.com/emoji/{{item+1}}.jpg"></image>
             </view>
 
