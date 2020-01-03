@@ -13,8 +13,10 @@ Page({
     keyBoardHeight: 0, // 键盘的高度
     loadProgress: 0, // 进度条进度值
 
-    SCROLLTOP: 80, // 标题距离多远时浮动
+    SCROLLDISTANCE: 80, // 标题距离多远时浮动
+    scrollTop: 0,
 
+    isTopHidden: true, // top 按钮是否显示
     isTitleHidden: true, // 是否显示标题  false 渲染，true 不渲染
     isCommentLoad: true, // 是否可以继续加载评论条数
     isBottomBarHidden: false, //是否显示隐藏底部操作栏
@@ -53,21 +55,39 @@ Page({
     }
 
   },
+
+  // 回到顶部
+  goTop() {
+
+    this.setData({
+      scrollTop: 0
+    });
+
+  },
+
   // 滚动一定值后 显示/隐藏 title
   bodyScroll(e) {
 
-    let flage = !(e.detail.scrollTop > this.data.SCROLLTOP);
+    let flage = !(e.detail.scrollTop > this.data.SCROLLDISTANCE);
 
-    if (flage !== this.data.isHidden) {
+    if (flage !== this.data.isTitleHidden) {
 
       this.setData({
-
-        isHidden: !this.data.isHidden
-
+        isTitleHidden: !this.data.isTitleHidden,
       });
+
+      setTimeout(() => {
+
+        this.setData({
+          isTopHidden: !this.data.isTopHidden // 显示top按钮
+        });
+
+      },1000);
+
     }
 
   },
+
   // 滚动到底部继续加载评论列表
   bindScrollToLower(e) {
 
@@ -95,6 +115,7 @@ Page({
   handlerClickEmoji(event) {
     this.data.tCommentBarInstance.setEmoji(event.detail.emoji);
   },
+
   // t-bottombar 点击了输入框 隐藏当前，显示 t-commentbar
   dispalyCommentbar() {
 
@@ -107,6 +128,7 @@ Page({
     this.data.tCommentBarInstance.getSetInputFocus();
 
   },
+
   // 显示最原先状态 t-bottombar 隐藏 t-commentbar t-emopanel
   dispalyBottombar() {
 
@@ -120,6 +142,7 @@ Page({
     this.data.tCommentBarInstance.initParamsMethod();
 
   },
+
   // 隐藏表情面板
   hiddenEmojiPanel() {
 
@@ -131,6 +154,7 @@ Page({
     });
 
   },
+
   // 唤醒表情面板
   dispalyEmojiPanel(e) {
 

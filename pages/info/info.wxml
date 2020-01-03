@@ -1,28 +1,83 @@
+
 <!--pages/info/info.wxml-->
-<scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
+<scroll-view scroll-y class="DrawerPage {{modalName === 'viewModal'?'show':''}}">
 
-    <!--    用户登录，显示头像    -->
-    <block wx:if="{{false}}">
-        <view class="t_avatar_view" bindtap="showModal" data-target="viewModal">
-            <image src="/assert/img/1.jpeg"></image>
-        </view>
-    </block>
+<!--  顶部背景  -->
+    <view class="info-bg">
 
-    <block wx:else>
-        <view class="t_avatar_view" bindtap="showModal" data-target="viewModal">
-            <image src="/assert/img/2.png"></image>
+    </view>
+<!-- 头像，及右侧部分 -->
+    <view class="info-center bg-black">
+
+        <view class="info-center-top">
+
+            <view class="t_avatar_view_mask bg-black">
+
+                <!--    用户登录，显示头像    -->
+                <block wx:if="{{true}}">
+                    <view class="t_avatar_view" bindtap="showModal" data-target="viewModal">
+                        <image src="/assert/img/1.jpeg"></image>
+                    </view>
+                </block>
+
+                <block wx:else>
+                    <view class="t_avatar_view" bindtap="showModal" data-target="viewModal">
+                        <image src="/assert/img/2.png"></image>
+                    </view>
+                </block>
+
+            </view>
+
+            <view class="info-center-top-right" wx:if="{{true}}">
+
+                    <view class="login_text">
+                        点击头像进行登录...
+                    </view>
+
+                    <view class="iconfont icon-guanzhu guanzhu-class"></view>
+            </view>
+
         </view>
-    </block>
+
+<!-- 姓名 -->
+
+        <view class="info-name">
+            <text>唐小年</text>
+        </view>
+
+        <view class="signature-text">
+            <text>签名:这家伙很懒，什么都没留下...</text>
+        </view>
+
+        <view class="self-info">
+
+            <view class="age-city">
+                <text>21岁</text><text>滁州</text><text>滁州学院</text>
+            </view>
+
+            <view class="good-pay">
+                <view>
+                    <text class="good-number">3</text>获赞
+                </view>
+                <view>
+                    <text class="pay-class">20</text>关注
+                </view>
+            </view>
+
+        </view>
+
+
+    </view>
 
 </scroll-view>
 
         <!-- DrawerClose -->
-<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
+<view class="DrawerClose {{modalName === 'viewModal'?'show':''}}" bindtap="hideModal">
     <text class="cuIcon-pullright"></text>
 </view>
 
         <!-- Drawer 部分 -->
-<scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}} bg-gradual-blue">
+<scroll-view scroll-y class="DrawerWindow {{modalName === 'viewModal'?'show':''}} bg-gradual-blue">
 
     <!--  list列表  -->
     <view class="cu-bar solid-bottom margin-top">

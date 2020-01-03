@@ -2,6 +2,7 @@
 const app = getApp();
 
 Page({
+
   /**
    * 页面的初始数据
    */
@@ -11,14 +12,18 @@ Page({
     Custom: app.globalData.Custom,
     modalName:null
   },
+
   showModal(e) {
+
     this.setData({
       modalName: e.currentTarget.dataset.target
-    })
+    });
+
   },
   hideModal(e) {
+
     this.setData({
       modalName: null
-    })
+    });
   },
 });

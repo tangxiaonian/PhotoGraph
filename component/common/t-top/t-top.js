@@ -5,6 +5,10 @@ Component({
    */
   properties: {
 
+    hidden:{
+      type:Boolean,
+      value: true
+    }
   },
 
   /**
@@ -18,6 +22,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
+
+    goTop() {
+      this.triggerEvent("goTop");
+    }
 
   }
 })

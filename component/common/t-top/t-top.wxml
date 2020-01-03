@@ -1,5 +1,5 @@
 <!--component/common/t-top/t-top.wxml-->
-<view class="t-top">
+<view class="t-top" hidden="{{hidden}}" bind:tap="goTop">
 
     <text>top</text>
 
