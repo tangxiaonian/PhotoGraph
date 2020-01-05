@@ -1,13 +1,28 @@
-
 <!--pages/info/info.wxml-->
-<scroll-view scroll-y class="DrawerPage {{modalName === 'viewModal'?'show':''}}">
+<scroll-view scroll-y
+             lower-threshold="0"
+             bindscroll="handlerPageScroll"
+             scroll-with-animation="true"
+             bindscrolltolower="handlerPageScrollLower"
+             bindscrolltoupper="handlerPageScrollToupper"
+             class="DrawerPage {{modalName === 'viewModal'?'show':''}}">
+
+<!--  顶部导航栏  -->
+    <t-navbar bgColor="xx"
+              class="fixed-class"
+              style="background-color:white;opacity:{{opacity}};transition: opacity .1s;">
+
+        <view slot="center" style="color:black;">唐小年</view>
+
+    </t-navbar>
 
 <!--  顶部背景  -->
     <view class="info-bg">
 
     </view>
+
 <!-- 头像，及右侧部分 -->
-    <view class="info-center bg-black">
+    <view class="info-center bg-black" id="info-body">
 
         <view class="info-center-top">
 
@@ -39,7 +54,7 @@
 
         </view>
 
-<!-- 姓名 -->
+<!-- 个人信息 -->
 
         <view class="info-name">
             <text>唐小年</text>
@@ -66,8 +81,29 @@
 
         </view>
 
+<!--    其他工具    -->
 
     </view>
+
+<!--  作品栏  -->
+    <w-switchtab titles="{{['作品','喜欢','关注']}}"
+                 scrollY="{{isTabScrollY}}"
+                 bind:handlerScrollToupper="handlerScrollToupper"
+                 id="switchTab">
+
+        <view slot="works">
+            <view wx:for="{{50}}" wx:key="index">{{index}}</view>
+        </view>
+
+        <view slot="like">
+            <text>wroks</text>
+        </view>
+
+        <view slot="attention">
+            <text>wroks</text>
+        </view>
+
+    </w-switchtab>
 
 </scroll-view>
 

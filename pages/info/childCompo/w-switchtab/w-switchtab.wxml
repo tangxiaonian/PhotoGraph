@@ -1,0 +1,73 @@
+<view class="switchtab-container">
+
+    <view class="switchtab-top">
+
+        <view class="navbar">
+
+            <view
+                    wx:for="{{titles}}"
+                    class="navbar-item"
+                    wx:key="index"
+                    data-index="{{index}}"
+                    bind:tap="handlerClick">
+                {{item}}
+            </view>
+
+        </view>
+
+        <view class="navba-slider"
+              style="transform:translateX({{offsetWidth}}px);"></view>
+
+    </view>
+<!--  windowHeight - navbarHeight - 切换栏高度-->
+    <view class="switchtab-body"
+          style="height: calc({{windowHeight}}px - {{navbarHeight}}px - 70rpx)">
+
+        <swiper
+                bind:change="changeItem"
+                current="{{current}}"
+        >
+            <swiper-item>
+
+                <scroll-view
+                        upper-threshold="50"
+                        scroll-y="{{scrollY}}"
+                        bindscrolltoupper="handlerScrollToupper">
+
+                    <slot name="works"></slot>
+
+                </scroll-view>
+
+            </swiper-item>
+
+            <swiper-item>
+
+                <scroll-view
+                        upper-threshold="50"
+                        scroll-y="{{scrollY}}"
+                        bindscrolltoupper="handlerScrollToupper">
+
+                    <slot name="like"></slot>
+
+                </scroll-view>
+
+            </swiper-item>
+
+            <swiper-item>
+
+                <scroll-view
+                        upper-threshold="50"
+                        scroll-y="{{scrollY}}"
+                        bindscrolltoupper="handlerScrollToupper">
+
+                    <slot name="attention"></slot>
+
+                </scroll-view>
+
+            </swiper-item>
+
+        </swiper>
+
+    </view>
+
+</view>

@@ -1,4 +1,8 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "w-switchtab": "/pages/info/childCompo/w-switchtab/w-switchtab",
+
+    "t-navbar": "/component/common/t-navbar/t-navbar"
+  },
   "navigationStyle":"custom"
 }

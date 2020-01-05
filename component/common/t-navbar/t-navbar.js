@@ -2,6 +2,7 @@
 let app = getApp();
 
 Component({
+
   options: {
     "multipleSlots": true
   },
@@ -14,6 +15,8 @@ Component({
       value:"--gradualBlue"
     }
   },
+
+  externalClasses: ["fixedClass"],
 
   /**
    * 组件的初始数据
