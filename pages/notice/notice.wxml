@@ -1,2 +1,55 @@
 <!--pages/notice/notice.wxml-->
-<text>pages/notice/notice.wxml</text>
+<!--  顶部导航栏  -->
+<t-navbar>
+
+    <view slot="center" style="color:white;">通知</view>
+
+</t-navbar>
+
+<!--通知栏-->
+<view class="cu-bar bg-white solid-bottom">
+    <view class="action">
+        <text class="cuIcon-title text-orange "></text>
+        通知列表
+    </view>
+</view>
+
+<scroll-view scroll-y
+             style="height: calc({{windowHeight - customNavBarHeight }}px - 100rpx);">
+
+        <view class="cu-list menu-avatar">
+
+            <view class="cu-item"
+                  bind:longtap="handlerLongTap"
+                  bind:tap="handlerClick"
+                  wx:for="{{10}}"
+                  wx:key>
+
+                <view class="cu-avatar round lg"
+                      style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big2100{{index+1}}.jpg);">
+                </view>
+
+                <view class="content">
+                    <view class="text-grey text-title">
+                        <text>文晓港 评论了你的发布的:</text>
+                    </view>
+                    <view class="text-gray text-sm" style="font-size: 15px;">
+                        <text class="cuIcon-title text-blue"></text>
+                        javaEE 的开端
+                    </view>
+                </view>
+
+                <view class="action">
+                    <view class="text-grey text-xs" style="font-size: 13px;">22:20</view>
+                    <view class="cu-tag bg-text text-red">new</view>
+                </view>
+
+                <view class="move">
+                    <view class="bg-grey">置顶</view>
+                    <view class="bg-red">删除</view>
+                </view>
+            </view>
+        </view>
+
+
+</scroll-view>

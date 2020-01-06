@@ -1,18 +1,18 @@
 // pages/info/info.js
-
 import {Debounce} from "../../utils/Utils";
 
 const app = getApp();
 
 Page({
-
     /**
      * 页面的初始数据
      */
     data: {
 
         modalName: null, // 是否打开左侧模态框
-        opacity: 0, // 是否隐藏
+
+        isLogin: false, // 用户是否登陆
+        opacity: 0, // 是否隐藏title
         isTabScrollY: false, // switchtabBar 里面的 scroll-view 是否可滚动
 
         infoBodyTop: 0, // 距离顶部的top值
@@ -67,6 +67,7 @@ Page({
         let switchTabTop = this.data.switchTabTop;
 
         // console.log(event.detail.scrollTop, switchTabTop, switchTabTop - this.data.customNavBarHeight);
+
         // 滚动的距离 > infoBodyTop 小于 switchTab 的时候，改变 opacity
         if (scrollTop >= infoBodyTop && scrollTop <= (switchTabTop - this.data.customNavBarHeight)) {
 
@@ -103,7 +104,7 @@ Page({
             isTabScrollY: false
         });
 
-        console.log("滚动到了顶部页面....");
+        // console.log("滚动到了顶部页面....");
     },
     // 监听包裹页面的 scroll-view 滚动到 底部 时触发
     handlerPageScrollLower() {
@@ -113,12 +114,14 @@ Page({
             isTabScrollY: true
         });
 
-        console.log("滚动到了底部页面....");
+        // console.log("滚动到了底部页面....");
 
     },
     // switchTabScroll 的 scroll 滚动到顶部触发
     handlerScrollToupper() {
-        console.log("让 switchTab scrollview 不可滚动....");
+
+        // console.log("让 switchTab scrollview 不可滚动....");
+
         this.setData({
             isTabScrollY: false
         });

@@ -1,6 +1,10 @@
 {
   "usingComponents": {
+
     "w-switchtab": "/pages/info/childCompo/w-switchtab/w-switchtab",
+
+    "t-login": "/pages/info/childCompo/t-login/t-login",
+    "t-login-list": "/pages/info/childCompo/t-login-list/t-login-list",
 
     "t-navbar": "/component/common/t-navbar/t-navbar"
   },

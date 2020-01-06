@@ -1,1 +1,35 @@
 /* pages/notice/notice.wxss */
+scroll-view{
+    background-color: white;
+}
+
+.action > .bg-text{
+    background-color: white;
+}
+
+.cu-list.menu-avatar>.cu-item .content > .text-title{
+    font-size: 20px;
+}
+
+.cu-avatar.lg{
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.cu-item {
+    margin: 10rpx 0;
+    border-bottom: 1px solid #C1C1C1;
+}
+
+.cu-list.menu-avatar>.cu-item .content {
+    left: 160rpx;
+}
+
+/*.notice-title{*/
+/*    height: 80rpx;padding-left: 10rpx;*/
+/*    line-height: 80rpx;*/
+/*    font-size: 16px;font-weight: bold;*/
+/*    color: #888888;*/
+/*    border-bottom: 1px solid #888888;*/
+/*    background-color: white;*/
+/*}*/

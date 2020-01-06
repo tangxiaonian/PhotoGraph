@@ -107,36 +107,20 @@
 
 </scroll-view>
 
-        <!-- DrawerClose -->
+<!-- DrawerClose -->
 <view class="DrawerClose {{modalName === 'viewModal'?'show':''}}" bindtap="hideModal">
     <text class="cuIcon-pullright"></text>
 </view>
 
-        <!-- Drawer 部分 -->
-<scroll-view scroll-y class="DrawerWindow {{modalName === 'viewModal'?'show':''}} bg-gradual-blue">
+<!-- Drawer 部分 -->
+<scroll-view class="DrawerWindow {{modalName === 'viewModal'?'show':''}} bg-gradual-blue">
 
-    <!--  list列表  -->
-    <view class="cu-bar solid-bottom margin-top">
+<!--  登录界面  -->
+    <t-login wx:if="{{isLogin}}"></t-login>
 
-        <view class="cu-list card-menu menu" style="width:100%;">
+<!-- 登录过后显示的页面 -->
+    <t-login-list wx:if="{{!isLogin}}"></t-login-list>
 
-            <view class="cu-item arrow">
-                <view class="content_">
-                    <text class="cuIcon-circlefill text-grey"></text>
-                    <text class="text-grey">图标 + 标题</text>
-                </view>
-            </view>
-
-            <view class="cu-item arrow">
-                <view class="content_">
-                    <text class="cuIcon-circlefill text-grey"></text>
-                    <text class="text-grey">图标 + 标题</text>
-                </view>
-            </view>
-
-        </view>
-
-    </view>
 
 </scroll-view>
 
