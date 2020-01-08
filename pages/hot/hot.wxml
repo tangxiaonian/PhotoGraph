@@ -1,1 +1,29 @@
-<!--pages/hot/hot.wxml-->
+<!--  顶部导航栏  -->
+<t-navbar>
+
+    <view slot="center" style="color:white;">热榜</view>
+
+</t-navbar>
+
+<scroll-view
+        style="height:{{ windowHeight - customNavBarHeight}}px;"
+        scroll-y>
+
+    <view class="hot-list">
+
+        <view class="hot-list-item" wx:for="{{ColorList}}">
+
+            <view class="ranking_number">
+                <view class="bg-{{item.name}} number_value">top {{index+1}}</view>
+            </view>
+
+            <t-card-case></t-card-case>
+
+        </view>
+    </view>
+
+    <!--    加载结束  提示      -->
+    <view class="cu-load {{false ?'loading':'over'}}"></view>
+
+
+</scroll-view>

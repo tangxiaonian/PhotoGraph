@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "t-navbar": "/component/common/t-navbar/t-navbar",
+    "t-card-case": "/component/content/t-card-case/t-card-case"
+  },
+  "navigationStyle":"custom"
 }

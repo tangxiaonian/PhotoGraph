@@ -1,1 +1,25 @@
 /* pages/hot/hot.wxss */
+
+.hot-list-item{
+    padding: 10rpx;
+    margin: 20rpx;
+    background-color: white;
+}
+
+.ranking_number{
+    display: flex;
+    justify-content: center;
+    height: 100rpx;
+}
+
+.ranking_number .number_value{
+    width: 100%;margin: 8rpx 10rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    border-radius: 10rpx;
+}
+
+.hot-list-item{
+    margin-top: 10rpx;
+}

@@ -1,2 +1,38 @@
 <!--pages/theme/theme.wxml-->
-<text>pages/theme/theme.wxml</text>
+<t-navbar>
+
+    <view slot="center" style="color:white;">主题</view>
+
+</t-navbar>
+
+<scroll-view scroll-y style="height:{{ windowHeight - customNavBarHeight}}px;">
+
+
+    <view class="theme-list">
+
+        <view class="theme-list-item"
+              wx:for="{{5}}" wx:key="index"
+              style="background-image: url(https://shouheng.oss-cn-beijing.aliyuncs.com/photo/theme/1266374880273.jpg);animation-delay:{{(index+2)*0.1}}s">
+
+            <view class="item-content">
+                夏
+            </view>
+
+        </view>
+
+<!--        <view class="theme-list-item"-->
+<!--              wx:for="{{2}}" wx:key="index"-->
+<!--              style="background-image: url(https://shouheng.oss-cn-beijing.aliyuncs.com/photo/theme/timg.jpg);">-->
+
+<!--            <view class="item-content">-->
+<!--                春-->
+<!--            </view>-->
+<!--        </view>-->
+
+    </view>
+
+    <!--    加载结束  提示      -->
+    <view class="cu-load {{false ?'loading':'over'}}"></view>
+
+</scroll-view>
+

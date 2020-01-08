@@ -7,7 +7,8 @@
     "views/search/search",
     "pages/info/info",
     "views/detail/detail",
-    "views/public/public"
+    "views/public/public",
+    "views/commentdetail/commentdetail"
   ],
   "window": {
     "navigationStyle": "default"

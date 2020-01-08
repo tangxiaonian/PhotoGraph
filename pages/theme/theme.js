@@ -1,4 +1,7 @@
 // pages/theme/theme.js
+
+const app = getApp();
+
 Page({
 
   /**
@@ -6,6 +9,9 @@ Page({
    */
   data: {
 
+    statusBarHeight: app.globalData.statusBarHeight, // 状态栏的高度
+    customNavBarHeight: app.globalData.customNavBarHeight, // 自定义navbar高度
+    windowHeight: app.globalData.windowHeight, // 屏幕高度
   },
 
   /**

@@ -104,6 +104,13 @@
 					"pathName": "pages/notice/notice",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评论详情页",
+					"pathName": "views/commentdetail/commentdetail",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
