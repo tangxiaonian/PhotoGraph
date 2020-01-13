@@ -35,10 +35,19 @@
     z-index: -1;
 }
 
-.item-content{
-    font-size: 25px;
+.item-title,.item-content{
     font-weight: bold;
     color: white;
+}
+.item-title{
+    height: 90rpx;
+    font-size: 25px;
+}
+
+.item-content{
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size: 19px;
 }
 
 

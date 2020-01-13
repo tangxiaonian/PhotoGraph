@@ -82,5 +82,5 @@
 }
 .comment-item-bottom .t_receive{
     margin-left: 20rpx;
-    color: #B1B1B1;
+    color: var(--blue);
 }

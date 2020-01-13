@@ -1,5 +1,7 @@
 // views/detail/detail.js
+
 let app = getApp();
+
 Page({
 
   /**
@@ -15,6 +17,8 @@ Page({
 
     SCROLLDISTANCE: 80, // 标题距离多远时浮动
     scrollTop: 0,
+
+    placeholder:"留点信息吧...", // tCommentBar 显示的信息
 
     isTopHidden: true, // top 按钮是否显示
     isTitleHidden: true, // 是否显示标题  false 渲染，true 不渲染
@@ -32,6 +36,22 @@ Page({
     this.data.tCommentBarInstance = this.selectComponent("#t-commentbar");
 
   },
+  // 点击回复按钮
+  receiveMsg(event) {
+
+    console.log(event.currentTarget.dataset.name);
+
+    this.setData({
+      isBottomBarHidden: !this.data.isBottomBarHidden,
+      isCommentBarHidden: !this.data.isCommentBarHidden,
+      placeholder: "回复 "+event.currentTarget.dataset.name +" :"
+    });
+
+    // 让 t-commentbar 获取焦点 弹起键盘
+    this.data.tCommentBarInstance.getSetInputFocus();
+
+  },
+
   // 顶部滚动条 的显示与隐藏
   loadProgress() {
 
@@ -103,7 +123,8 @@ Page({
     this.setData({
       isBottomBarHidden: false,
       isCommentBarHidden: true,
-      isEmoPanel: true
+      isEmoPanel: true,
+      placeholder:"留点信息吧..."
     });
 
     // 还原 tCommentBar 数据状态
@@ -169,4 +190,5 @@ Page({
       isEmoPanel: !this.data.isEmoPanel // 显示表情面板
     });
   }
+
 });

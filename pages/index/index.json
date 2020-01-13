@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "t-navbar": "/component/common/t-navbar/t-navbar",
+    "t-hover-ball": "/component/content/t-hover-ball/t-hover-ball",
 
     "w-switchtab": "/pages/index/childComp/w-switchtab/w-switchtab",
     "w-search-navbar": "/pages/index/childComp/search-bar/w-search-bar",

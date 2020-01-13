@@ -1,35 +1,89 @@
 /* pages/notice/notice.wxss */
-scroll-view{
-    background-color: white;
-}
-
 .action > .bg-text{
     background-color: white;
 }
 
-.cu-list.menu-avatar>.cu-item .content > .text-title{
-    font-size: 20px;
+/* 每一项 */
+.t-cu-item{
+    margin: 10rpx;
+    padding: 10rpx;
+    background-color: white;
 }
 
-.cu-avatar.lg{
-    width: 120rpx;
-    height: 120rpx;
+.cu-card.article>.cu-item .content {
+    padding: 0;
+}
+.cu-card.article>.cu-item .content .text-content {
+    height: 6.5em;
+}
+.cu-card>.cu-item{
+    margin: 10rpx;
 }
 
-.cu-item {
+.comment-title{
+    display: flex;
+    align-items: center;
+}
+
+.cu-title .content{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 10rpx;
+}
+
+.comment-title .t_avatar{
+    width: 80rpx;
+    height: 80rpx;margin: 10rpx;
+    border-radius: 80rpx;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.reply-text-active{
+    flex: 1;
+    text-align: right;
+    font-size: 18px;
+    color: #8188FF;
+}
+/* 回复 */
+
+.comment-title{
+    font-weight: bold;
     margin: 10rpx 0;
-    border-bottom: 1px solid #C1C1C1;
+}
+.avatar-tubiao{
+    display: flex;
+    justify-content: space-between;
+}
+.avatar-left-right{
+    display: flex;
+    align-items: center;
+}
+.avatar-left-right .avatar-left,.avatar-left-right .avatar-right{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.avatar-left-right .t_avatar{
+    width: 60rpx;
+    height: 60rpx;margin: 5rpx;
+    border-radius: 60rpx;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.cu-list.menu-avatar>.cu-item .content {
-    left: 160rpx;
+.avatar-left-right .reply-text{
+    margin: 0 10rpx;
 }
 
-/*.notice-title{*/
-/*    height: 80rpx;padding-left: 10rpx;*/
-/*    line-height: 80rpx;*/
-/*    font-size: 16px;font-weight: bold;*/
-/*    color: #888888;*/
-/*    border-bottom: 1px solid #888888;*/
-/*    background-color: white;*/
-/*}*/
+.reply-content{
+    width: 100%;
+    padding-left: 10rpx;
+}
+/* 加载更多评论 */
+.loading-text{
+    text-align: center;
+    margin: 10rpx 0;
+    color: var(--blue);
+}

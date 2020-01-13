@@ -13,6 +13,10 @@ Component({
             type: Boolean,
             value: true
         },
+        placeholder:{
+            type: String,
+            value: "留点信息吧..."
+        }
 
     },
     /**
@@ -60,7 +64,6 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
         // 还原所有数据
         initParamsMethod() {
 

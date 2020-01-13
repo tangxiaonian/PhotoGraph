@@ -4,6 +4,8 @@
       hidden="{{hidden}}"
       style="bottom:{{distanceBottom}}px">
 
+    <view></view>
+
     <view class="left">
 
         <view bind:tap="clickKeyBoard"
@@ -41,7 +43,7 @@
                bindblur="bindBlur"
                cursor-spacing="{{100}}"
                adjust-position="{{false}}"
-               placeholder="留点信息吧..."/>
+               placeholder="{{placeholder}}"/>
     </view>
 
     <view class="right" bind:tap="sendMsg">

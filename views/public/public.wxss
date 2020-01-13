@@ -1,1 +1,96 @@
 /* views/public/public.wxss */
+
+/* title */
+.title{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100rpx;padding: 0 10rpx;
+    background-color: #ffffff;
+    margin-bottom: 1px;
+}
+
+.right button{
+    color: var(--white);
+    background-color: #0081ff;
+    opacity: .6;
+}
+/* context */
+.content{
+    height: 30%;
+    padding: 10rpx;
+    background-color: #ffffff;
+}
+
+textarea{
+    width: 100%;
+    padding: 5px;
+    z-index: 0;
+}
+
+.other-tag{
+    display: flex;
+    justify-content: space-between;
+    padding: 10rpx;
+    font-size: 16px;
+}
+
+.theme-title {
+    width: 40%;
+}
+
+.theme-location{
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* picture region */
+.cu-bar{
+    min-height: 40rpx;
+}
+
+.picture-region{
+    background-color: #ffffff;
+}
+
+.placeholderClass{
+    padding: 10rpx;
+    font-size: 17px;
+    font-weight: bold;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    margin: 10rpx;
+}
+
+.t_name{
+    font-size: 17px;
+    color: #333;
+    margin: 15rpx;
+}
+
+.t_avatar{
+    width: 100rpx;
+    height: 100rpx;margin: 5rpx;
+    border-radius: 60rpx;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.make-list{
+    margin-top: 1px;
+    font-size: 16px;
+    background-color: var(--white);
+}
+
+.make-list > view{
+    padding: 15rpx;
+    margin-bottom: 1px;
+}
+.make-list .iconfont{
+    margin: 0 10rpx;
+}

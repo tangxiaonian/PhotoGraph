@@ -5,29 +5,59 @@
 
 </t-navbar>
 
+
 <scroll-view scroll-y style="height:{{ windowHeight - customNavBarHeight}}px;">
 
 
     <view class="theme-list">
 
         <view class="theme-list-item"
-              wx:for="{{5}}" wx:key="index"
+              wx:for="{{2}}" wx:key="index"
               style="background-image: url(https://shouheng.oss-cn-beijing.aliyuncs.com/photo/theme/1266374880273.jpg);animation-delay:{{(index+2)*0.1}}s">
 
-            <view class="item-content">
+            <view class="item-title">
                 夏
+            </view>
+
+            <view class="item-content">
+                风暖鸟声碎，日高花影重。
+            </view>
+
+            <view class="item-bottom">
+
+                <view class="text-white text-sm text-right padding">
+                    <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+                    <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+                    <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+                </view>
+
             </view>
 
         </view>
 
-<!--        <view class="theme-list-item"-->
-<!--              wx:for="{{2}}" wx:key="index"-->
-<!--              style="background-image: url(https://shouheng.oss-cn-beijing.aliyuncs.com/photo/theme/timg.jpg);">-->
+        <view class="theme-list-item"
+              wx:for="{{2}}" wx:key="index"
+              style="background-image: url(https://shouheng.oss-cn-beijing.aliyuncs.com/photo/theme/timg.jpg);">
 
-<!--            <view class="item-content">-->
-<!--                春-->
-<!--            </view>-->
-<!--        </view>-->
+            <view class="item-title">
+                春
+            </view>
+
+            <view class="item-content">
+                溪云初起日沉阁，山雨欲来风满楼。
+            </view>
+
+            <view class="item-bottom">
+
+                <view class="text-white text-sm text-right padding">
+                    <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+                    <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+                    <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+                </view>
+
+            </view>
+
+        </view>
 
     </view>
 

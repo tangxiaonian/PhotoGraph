@@ -6,6 +6,15 @@ Page({
    */
   data: {
 
+    COUNT: 4,// 最多选取的图片数量
+
+    imgList:[],//存放图片的list
+
+    isThemePanelHidden: true, // 主题panel是否隐藏 默认隐藏
+
+    location: "", //选择的位置
+
+    theme:{context:""}
   },
 
   /**
@@ -14,53 +23,97 @@ Page({
   onLoad: function (options) {
 
   },
+  // 选择地图位置
+  chooseLocation() {
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
+    wx.getLocation({
+
+      type: 'gcj02',
+
+      isHighAccuracy: true,
+
+      success: (res) => {
+
+        const latitude = res.latitude;
+        const longitude = res.longitude;
+
+        wx.chooseLocation({
+          latitude,
+          longitude,
+          success:(res) => {
+            this.setData({
+              location:res.name
+            });
+          }
+        });
+
+      }
+    });
+
+  },
+  /*
+    接收用户选择的
    */
-  onReady: function () {
+  receiveTheme(event) {
+
+    console.log();
+
+    this.setData({
+      theme:event.detail
+    })
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
+  /*
+    显示主题面板
    */
-  onShow: function () {
+  displayThemePanel() {
+
+    this.setData({
+      isThemePanelHidden: false
+    });
+  },
+  // 图片选择
+  chooseImage() {
+
+    let count = this.data.COUNT - this.data.imgList.length;
+
+    wx.chooseImage({
+      count,
+      sourceType:['album', 'camera'],
+      success:(result) => {
+
+        this.data.imgList.push(...result.tempFilePaths);
+
+        this.setData({
+
+          imgList: [...this.data.imgList]
+
+        });
+
+      }
+    });
 
   },
+  // 删除图片
+  delImg(event) {
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+    let index = event.currentTarget.dataset.index - '0';
 
-  },
+    let newArr = this.data.imgList.splice(index, 1);
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
+    this.setData({
+      imgList: [...this.data.imgList]
+    });
 
   },
+  // 图片预览
+  viewImage(event) {
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    wx.previewImage({
+      urls: this.data.imgList,
+      current:event.currentTarget.dataset.index - '0'
+    });
   }
+
 })

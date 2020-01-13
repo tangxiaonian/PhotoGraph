@@ -4,9 +4,9 @@
     "t-navbar": "/component/common/t-navbar/t-navbar",
     "t-top": "/component/common/t-top/t-top",
 
-    "t-bottombar": "/views/detail/childComp/t-bottombar/t-bottombar",
-    "t-commentbar": "/views/detail/childComp/t-commentbar/t-commentbar",
-    "t-emopanel": "/views/detail/childComp/t-emopanel/t-emopanel"
+    "t-bottombar": "/component/content/t-bottombar/t-bottombar",
+    "t-commentbar": "/component/content/t-commentbar/t-commentbar",
+    "t-emopanel": "/component/content/t-emopanel/t-emopanel"
   },
   "navigationStyle":"custom"
 }

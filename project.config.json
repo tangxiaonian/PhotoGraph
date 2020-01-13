@@ -99,8 +99,8 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "通知页面",
+					"id": 6,
+					"name": "消息页面",
 					"pathName": "pages/notice/notice",
 					"query": "",
 					"scene": null
@@ -109,6 +109,20 @@
 					"id": -1,
 					"name": "评论详情页",
 					"pathName": "views/commentdetail/commentdetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "主题详情页",
+					"pathName": "views/themdetail/themdetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "位置页面",
+					"pathName": "views/location/location",
 					"query": "",
 					"scene": null
 				}

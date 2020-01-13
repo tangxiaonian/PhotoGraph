@@ -2,54 +2,146 @@
 <!--  顶部导航栏  -->
 <t-navbar>
 
-    <view slot="center" style="color:white;">通知</view>
+    <view slot="center" style="color:white;">消息</view>
 
 </t-navbar>
 
-<!--通知栏-->
+        <!--通知栏-->
 <view class="cu-bar bg-white solid-bottom">
     <view class="action">
         <text class="cuIcon-title text-orange "></text>
-        通知列表
+        消息列表
     </view>
 </view>
+
+<t-model
+        title="回复小王"
+        top="{{30}}"
+        placeholder="请输入回复的内容"
+        isModalHidden="{{isModalHidden}}">
+</t-model>
 
 <scroll-view scroll-y
              style="height: calc({{windowHeight - customNavBarHeight }}px - 100rpx);">
 
-        <view class="cu-list menu-avatar">
+    <view class="t-cu-item"
+          bind:longtap="handlerLongTap"
+          bind:tap="handlerClick">
 
-            <view class="cu-item"
-                  bind:longtap="handlerLongTap"
-                  bind:tap="handlerClick"
-                  wx:for="{{10}}"
-                  wx:key>
+        <view class="cu-title">
+            <view class="comment-title">
 
-                <view class="cu-avatar round lg"
-                      style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big2100{{index+1}}.jpg);">
+                <view class="t_avatar"
+                      style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+
+                <view class="name-time">
+                    <text class="t_name">唐小年:</text>
+                    <view>2019-08-08 12:09</view>
                 </view>
 
+                <view class="reply-text-active" catch:tap="showModal">回复</view>
+            </view>
+            <view class="content">写的不错!</view>
+        </view>
+
+        <view class="cu-card article">
+            <view class="cu-item shadow">
                 <view class="content">
-                    <view class="text-grey text-title">
-                        <text>文晓港 评论了你的发布的:</text>
+                    <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg"
+                           mode="aspectFill"></image>
+                    <view class="desc">
+                        <view class="text-content">折磨生出苦难，苦难又会加剧折磨，
+                            凡间这无穷的循环，将有我来终结！
+                            真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！
+                            真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！
+                            真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！
+                        </view>
                     </view>
-                    <view class="text-gray text-sm" style="font-size: 15px;">
-                        <text class="cuIcon-title text-blue"></text>
-                        javaEE 的开端
-                    </view>
-                </view>
-
-                <view class="action">
-                    <view class="text-grey text-xs" style="font-size: 13px;">22:20</view>
-                    <view class="cu-tag bg-text text-red">new</view>
-                </view>
-
-                <view class="move">
-                    <view class="bg-grey">置顶</view>
-                    <view class="bg-red">删除</view>
                 </view>
             </view>
         </view>
 
+    </view>
+
+    <view class="t-cu-item"
+          bind:longpress="handlerLongTap"
+          bind:tap="handlerClick">
+
+        <view class="cu-title">
+            <view class="comment-title">
+
+                <view class="t_avatar"
+                      style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+
+                <view class="name-time">
+                    <text class="t_name">唐小年:</text>
+                    <view>2019-08-08 12:09</view>
+                </view>
+
+                <view class="reply-text-active" catch:tap="showModal">回复</view>
+            </view>
+            <view class="content">写的不错!</view>
+        </view>
+
+        <view class="cu-card article">
+            <view class="cu-item shadow">
+                <view class="content">
+                    <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg"
+                           mode="aspectFill"></image>
+                    <view class="desc">
+                        <view class="text-content">折磨生出苦难，苦难又会加剧折磨，
+                            凡间这无穷的循环，将有我来终结！
+                            真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！
+                            真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！
+                            真正的恩典因不完整而美丽，因情感而真诚，因脆弱而自由！
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="comment">
+
+            <view class="comment-title">其他评论:</view>
+
+            <view class="comment-item" wx:for="{{2}}" wx:key="index">
+
+                <view class="avatar-tubiao">
+
+                    <view class="avatar-left-right">
+
+                        <view class="avatar-left">
+
+                            <view class="t_avatar"
+                                  style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+                            <text>小王</text>
+
+                        </view>
+
+                        <text class="reply-text">回复</text>
+
+                        <view class="avatar-right">
+                            <view class="t_avatar"
+                                  style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+                            <text>小龙</text>:
+                        </view>
+
+                    </view>
+
+                    <view class="iconfont icon-chakantiezihuifu tubiao" catch:tap="showModal"></view>
+
+                </view>
+
+                <view class="reply-content">你真是太厉害了!</view>
+
+            </view>
+
+            <view class="loading-comment">
+                <view class="loading-text">加载更多评论内容...</view>
+            </view>
+
+        </view>
+
+    </view>
 
 </scroll-view>

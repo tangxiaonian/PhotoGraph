@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "t-navbar": "/component/common/t-navbar/t-navbar",
+    "theme-panel": "/views/public/childComp/theme-panel"
+  },
+  "navigationStyle":"custom"
 }

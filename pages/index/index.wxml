@@ -7,7 +7,12 @@
     </view>
 </t-navbar>
 
-<!-- 搜索区 -->
+
+        <!-- 悬浮球 -->
+<t-hover-ball></t-hover-ball>
+
+
+        <!-- 搜索区 -->
 <w-search-navbar>
 
     <view slot="center">
@@ -24,7 +29,7 @@
 
 </w-search-navbar>
 
-<!-- 切换tab -->
+        <!-- 切换tab -->
 <w-switchtab titles="{{['推荐','关注']}}">
 
     <view slot="recommend">
@@ -33,6 +38,9 @@
         <t-card></t-card>
         <t-card></t-card>
 
+        <!--    加载结束  提示      -->
+        <view class="cu-load {{false ?'loading':'over'}}"></view>
+
     </view>
 
     <view slot="attention">
@@ -40,6 +48,9 @@
         <t-card></t-card>
         <t-card></t-card>
         <t-card></t-card>
+
+        <!--    加载结束  提示      -->
+        <view class="cu-load {{false ?'loading':'over'}}"></view>
 
     </view>
 
