@@ -6,7 +6,6 @@
 }
 
 .theme-list-item {
-
     position: relative;
     width: 90%;
     height: 300rpx;
@@ -48,7 +47,6 @@
     line-height: 120rpx;
     font-size: 19px;
 }
-
 
 @keyframes myAnimate {
 

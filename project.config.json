@@ -125,6 +125,12 @@
 					"pathName": "views/location/location",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人信息页面",
+					"pathName": "views/selfinfo/selfinfo",
+					"scene": null
 				}
 			]
 		}

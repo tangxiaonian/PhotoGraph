@@ -10,7 +10,8 @@
     "views/public/public",
     "views/commentdetail/commentdetail",
     "views/themdetail/themdetail",
-    "views/location/location"
+    "views/location/location",
+    "views/selfinfo/selfinfo"
   ],
   "window": {
     "navigationStyle": "default"

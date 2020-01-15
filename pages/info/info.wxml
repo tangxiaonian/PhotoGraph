@@ -7,7 +7,7 @@
              bindscrolltoupper="handlerPageScrollToupper"
              class="DrawerPage {{modalName === 'viewModal'?'show':''}}">
 
-<!--  顶部导航栏  -->
+    <!--  顶部导航栏  -->
     <t-navbar bgColor="xx"
               class="fixed-class"
               style="background-color:white;opacity:{{opacity}};transition: opacity .1s;">
@@ -16,12 +16,12 @@
 
     </t-navbar>
 
-<!--  顶部背景  -->
+    <!--  顶部背景  -->
     <view class="info-bg">
 
     </view>
 
-<!-- 头像，及右侧部分 -->
+    <!-- 头像，及右侧部分 -->
     <view class="info-center bg-black" id="info-body">
 
         <view class="info-center-top">
@@ -45,16 +45,16 @@
 
             <view class="info-center-top-right" wx:if="{{true}}">
 
-                    <view class="login_text">
-                        点击头像进行登录...
-                    </view>
+                <view class="login_text">
+                    点击头像进行登录...
+                </view>
 
-                    <view class="iconfont icon-guanzhu guanzhu-class"></view>
+                <view class="iconfont icon-guanzhu guanzhu-class"></view>
             </view>
 
         </view>
 
-<!-- 个人信息 -->
+        <!-- 个人信息 -->
 
         <view class="info-name">
             <text>唐小年</text>
@@ -67,7 +67,9 @@
         <view class="self-info">
 
             <view class="age-city">
-                <text>21岁</text><text>滁州</text><text>滁州学院</text>
+                <text>21岁</text>
+                <text>滁州</text>
+                <text>滁州学院</text>
             </view>
 
             <view class="good-pay">
@@ -81,18 +83,18 @@
 
         </view>
 
-<!--    其他工具    -->
+        <!--    其他工具    -->
 
     </view>
 
-<!--  作品栏  -->
+    <!--  作品栏  -->
     <w-switchtab titles="{{['作品','喜欢','关注']}}"
                  scrollY="{{isTabScrollY}}"
                  bind:handlerScrollToupper="handlerScrollToupper"
                  id="switchTab">
 
         <view slot="works">
-            <view wx:for="{{50}}" wx:key="index">{{index}}</view>
+            <view wx:for="{{5}}" wx:key="index">{{index}}</view>
         </view>
 
         <view slot="like">
@@ -107,18 +109,18 @@
 
 </scroll-view>
 
-<!-- DrawerClose -->
+        <!-- DrawerClose -->
 <view class="DrawerClose {{modalName === 'viewModal'?'show':''}}" bindtap="hideModal">
     <text class="cuIcon-pullright"></text>
 </view>
 
-<!-- Drawer 部分 -->
+        <!-- Drawer 部分 -->
 <scroll-view class="DrawerWindow {{modalName === 'viewModal'?'show':''}} bg-gradual-blue">
 
-<!--  登录界面  -->
+    <!--  登录界面  -->
     <t-login wx:if="{{isLogin}}"></t-login>
 
-<!-- 登录过后显示的页面 -->
+    <!-- 登录过后显示的页面 -->
     <t-login-list wx:if="{{!isLogin}}"></t-login-list>
 
 

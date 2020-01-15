@@ -3,9 +3,10 @@
 <view class="t-navbar fixed-class"
       style="height:{{navbarHeight}}px;background-image: var({{bgColor}});">
 
-    <view class="t-navbar-content" style="padding-top:{{statusBarHeight}}px;height:{{navbarHeight}}px;">
+    <view class="t-navbar-content"
+          style="padding-top:{{statusBarHeight}}px;height:{{navbarHeight}}px;">
 
-        <view class="t-navbar-left">
+        <view class="t-navbar-left" bind:tap="goback">
             <slot name="left"></slot>
         </view>
 
