@@ -9,14 +9,25 @@ Page({
      */
     data: {
 
+        delayNumber: 3, // 延迟基数
+        animationName: 'myAnimate',
+
         statusBarHeight: app.globalData.statusBarHeight, // 状态栏的高度
         customNavBarHeight: app.globalData.customNavBarHeight, // 自定义navbar高度
         windowHeight: app.globalData.windowHeight, // 屏幕高度
     },
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function (options) {
+    onTabItemTap(item) {
 
+        if (item.index === 2) {
+
+            this.setData({
+                animationName:'myAnimate'
+            });
+        }
+    },
+    onHide() {
+        this.setData({
+            animationName:''
+        });
     }
 });

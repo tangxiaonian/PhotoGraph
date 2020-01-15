@@ -1,5 +1,4 @@
 /* pages/theme/theme.wxss */
-
 .theme-list{
     display: flex;
     flex-wrap: wrap;
@@ -7,6 +6,7 @@
 }
 
 .theme-list-item {
+
     position: relative;
     width: 90%;
     height: 300rpx;
@@ -17,8 +17,7 @@
     background-position: center;
     background-color: white;
     border-radius: 5px;
-    animation-name: myAnimate;
-    animation-duration: .2s;
+    animation-duration: .3s;
     animation-timing-function: ease-in-out;
 }
 /* 背景 */
@@ -54,13 +53,10 @@
 @keyframes myAnimate {
 
     0%{
-        opacity: 0;
         transform: translateY(100px);
     }
 
     100%{
-
-        opacity: 1;
         transform: translateY(0);
     }
 

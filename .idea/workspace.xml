@@ -3,41 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e025f87b-8050-4732-8447-8598dec52a16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assert/css/photo.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/assert/css/photo.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hot/hot.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hot/hot.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hot/hot.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/notice/notice.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/notice/notice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/notice/notice.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/notice/notice.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/notice/notice.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/notice/notice.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/notice/notice.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/notice/notice.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/theme/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/theme/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/theme/theme.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/theme/theme.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/theme/theme.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/theme/theme.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-bottombar/t-bottombar.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-bottombar/t-bottombar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-bottombar/t-bottombar.json" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-bottombar/t-bottombar.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-bottombar/t-bottombar.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-bottombar/t-bottombar.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-bottombar/t-bottombar.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-bottombar/t-bottombar.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-commentbar/t-commentbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-commentbar/t-commentbar.json" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-commentbar/t-commentbar.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-commentbar/t-commentbar.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-emopanel/t-emopanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-emopanel/t-emopanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-emopanel/t-emopanel.json" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-emopanel/t-emopanel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-emopanel/t-emopanel.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-emopanel/t-emopanel.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/childComp/t-emopanel/t-emopanel.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-emopanel/t-emopanel.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/detail.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail/detail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail/detail.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detail/detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail/detail.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/public/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/public/public.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/public/public.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/public/public.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/search/search.json" beforeDir="false" afterPath="$PROJECT_DIR$/views/search/search.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,19 +19,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/search/search.wxml">
+        <entry file="file://$PROJECT_DIR$/pages/theme/theme.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="528">
+              <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/search/search.json">
+        <entry file="file://$PROJECT_DIR$/pages/theme/theme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+            <state relative-caret-position="616">
+              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/theme/theme.wxss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -97,9 +74,6 @@
         <option value="$PROJECT_DIR$/pages/hot/hot.wxss" />
         <option value="$PROJECT_DIR$/component/content/t-card-case/t-card-case.js" />
         <option value="$PROJECT_DIR$/component/content/t-card-case/t-card-case.wxml" />
-        <option value="$PROJECT_DIR$/pages/theme/theme.wxss" />
-        <option value="$PROJECT_DIR$/pages/theme/theme.wxml" />
-        <option value="$PROJECT_DIR$/pages/theme/theme.js" />
         <option value="$PROJECT_DIR$/pages/hot/hot.wxml" />
         <option value="$PROJECT_DIR$/pages/hot/hot.js" />
         <option value="$PROJECT_DIR$/views/detail/detail.wxss" />
@@ -144,14 +118,17 @@
         <option value="$PROJECT_DIR$/views/public/public.js" />
         <option value="$PROJECT_DIR$/views/public/public.wxml" />
         <option value="$PROJECT_DIR$/views/search/search.json" />
+        <option value="$PROJECT_DIR$/pages/theme/theme.wxml" />
+        <option value="$PROJECT_DIR$/pages/theme/theme.wxss" />
+        <option value="$PROJECT_DIR$/pages/theme/theme.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="439" />
-    <option name="y" value="79" />
+    <option name="x" value="287" />
+    <option name="y" value="45" />
     <option name="width" value="1549" />
-    <option name="height" value="1023" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -161,8 +138,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="WxProject" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,18 +150,7 @@
             <path>
               <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
               <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="colorui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PhotoGraph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PhotoGraph" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,7 +230,8 @@
       <workItem from="1578794553196" duration="4981000" />
       <workItem from="1578802780177" duration="6967000" />
       <workItem from="1578811698389" duration="4392000" />
-      <workItem from="1578896353708" duration="13019000" />
+      <workItem from="1578896353708" duration="14935000" />
+      <workItem from="1579051746230" duration="7528000" />
     </task>
     <task id="LOCAL-00001" summary="详情页开始增加表情面板">
       <created>1577785119682</created>
@@ -315,19 +282,26 @@
       <option name="project" value="LOCAL" />
       <updated>1578468655781</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="整体界面的基本完成">
+      <created>1578913955335</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578913955335</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264230000" />
+    <option name="totallyTimeSpent" value="273674000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="439" y="79" width="1549" height="1023" extended-state="0" />
+    <frame x="436" y="40" width="1549" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17806365" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.12178112" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909784" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -336,7 +310,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.51903117" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
@@ -370,6 +344,46 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="详情页开始增加表情面板" />
     <MESSAGE value="详情页动画的完成" />
@@ -378,17 +392,10 @@
     <MESSAGE value="个人信息页面滚动动画的完善" />
     <MESSAGE value="通知页面完毕" />
     <MESSAGE value="热榜页,主题页大致模型完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="热榜页,主题页大致模型完成" />
+    <MESSAGE value="整体界面的基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="整体界面的基本完成" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mixins/bottombar.js" />
-    <entry file="file://$PROJECT_DIR$/views/commentdetail/commentdetail.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/component/common/t-navbar/t-navbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -561,13 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/theme/theme.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="45" column="39" lean-forward="true" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/detail/detail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -686,13 +686,6 @@
     <entry file="file://$PROJECT_DIR$/views/search/search.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/search/search.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assert/css/photo.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -712,8 +705,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/search/search.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        <state relative-caret-position="88">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/search/search.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/theme/theme.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/theme/theme.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/theme/theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
         </state>
       </provider>
     </entry>
