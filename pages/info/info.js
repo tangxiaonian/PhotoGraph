@@ -1,5 +1,6 @@
 // pages/info/info.js
 import {Debounce} from "../../utils/Utils";
+import {StorageUtils} from "../../utils/StorageUtils";
 
 const app = getApp();
 
@@ -18,10 +19,14 @@ Page({
         infoBodyTop: 0, // 距离顶部的top值
         switchTabTop: 0,// switchTabTop 的top值
 
+        toastContext: "", // toast 显示与隐藏
+        isToastHidden: true,
+
+        userInfo: null, // 用户信息
+
         statusBarHeight: app.globalData.statusBarHeight, // 状态栏的高度
         customNavBarHeight: app.globalData.customNavBarHeight, // 自定义navbar高度
         windowHeight: app.globalData.windowHeight, // 屏幕高度
-
     },
     onLoad() {
 
@@ -29,7 +34,12 @@ Page({
 
         // 防抖函数
         this.Debouncefun = Debounce(this.pageScrollThrottling, 10);
-
+    },
+    showToast(event) {
+        this.setData({
+            isToastHidden: false,
+            toastContext: event.detail.content
+        });
     },
     showModal(e) {
         this.setData({
@@ -52,6 +62,24 @@ Page({
             .exec((res) => {
                 this.data.switchTabTop = res[0].top;
             });
+    },
+    // 获取 QQ邮箱登陆的用户信息
+    getQQUserInfo() {
+       StorageUtils.get("user", (result) => {
+           this.setData({
+               userInfo: result.data,
+               isLogin: true
+           });
+        });
+    },
+    // 获取 微信登陆的用户信息
+    getWxUserInfo() {
+        StorageUtils.get("user", (result) => {
+            this.setData({
+                userInfo: result.data,
+                isLogin: true
+            });
+        });
     },
     hideModal(e) {
         this.setData({
@@ -115,7 +143,6 @@ Page({
         });
 
         // console.log("滚动到了底部页面....");
-
     },
     // switchTabScroll 的 scroll 滚动到顶部触发
     handlerScrollToupper() {

@@ -6,7 +6,8 @@
     "t-login": "/pages/info/childCompo/t-login/t-login",
     "t-login-list": "/pages/info/childCompo/t-login-list/t-login-list",
 
-    "t-navbar": "/component/common/t-navbar/t-navbar"
+    "t-navbar": "/component/common/t-navbar/t-navbar",
+    "t-toast": "/component/common/t-toast/t-toast"
   },
   "navigationStyle":"custom"
 }

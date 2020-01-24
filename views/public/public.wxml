@@ -14,7 +14,7 @@
 <!-- 标题 -->
 <view class="title">
     <view class="right">
-        <button size="mini">发布</button>
+        <button size="mini" bind:tap="handlerPublish">发布</button>
     </view>
 </view>
 
@@ -32,7 +32,9 @@
 
     <textarea
             placeholder-class="placeholderClass"
-            placeholder="发出你的美图+文字..."></textarea>
+            bindinput="handlerInput"
+            placeholder="发出你的美图+文字...">
+    </textarea>
 
     <view class="other-tag">
 

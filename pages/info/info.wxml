@@ -12,7 +12,7 @@
               class="fixed-class"
               style="background-color:white;opacity:{{opacity}};transition: opacity .1s;">
 
-        <view slot="center" style="color:black;">唐小年</view>
+        <view slot="center" style="color:black;">{{userInfo != null ? (userInfo.rename ? userInfo.rename : (userInfo.username != null ? userInfo.username : "游客")) : "游客"}}</view>
 
     </t-navbar>
 
@@ -29,15 +29,15 @@
             <view class="t_avatar_view_mask bg-black">
 
                 <!--    用户登录，显示头像    -->
-                <block wx:if="{{true}}">
+                <block wx:if="{{userInfo != null}}">
                     <view class="t_avatar_view" bindtap="showModal" data-target="viewModal">
-                        <image src="/assert/img/1.jpeg"></image>
+                        <image src="{{userInfo.avatarUrl}}"></image>
                     </view>
                 </block>
 
                 <block wx:else>
                     <view class="t_avatar_view" bindtap="showModal" data-target="viewModal">
-                        <image src="/assert/img/2.png"></image>
+                        <image src="https://shouheng.oss-cn-beijing.aliyuncs.com/photo/default-avater.jpeg"></image>
                     </view>
                 </block>
 
@@ -45,8 +45,12 @@
 
             <view class="info-center-top-right" wx:if="{{true}}">
 
-                <view class="login_text">
+                <view class="login_text" wx:if="{{userInfo === null }}">
                     点击头像进行登录...
+                </view>
+
+                <view class="login_text" wx:if="{{userInfo != null }}">
+                    点击头像编辑信息...
                 </view>
 
                 <view class="iconfont icon-guanzhu guanzhu-class"></view>
@@ -57,34 +61,36 @@
         <!-- 个人信息 -->
 
         <view class="info-name">
-            <text>唐小年</text>
+            <text>{{userInfo != null ? (userInfo.rename ? userInfo.rename : (userInfo.username != null ? userInfo.username : "游客")) : "游客"}}</text>
         </view>
 
         <view class="signature-text">
-            <text>签名:这家伙很懒，什么都没留下...</text>
+            <text>签名:{{userInfo != null ? userInfo.remake : "这家伙很懒，什么都没留下... "}}</text>
         </view>
 
         <view class="self-info">
 
             <view class="age-city">
-                <text>21岁</text>
-                <text>滁州</text>
-                <text>滁州学院</text>
+                <text>{{userInfo != null ? userInfo.age : "0" }}岁</text>
+                <text>{{userInfo != null ? userInfo.province : "北京"}}</text>
             </view>
 
             <view class="good-pay">
                 <view>
-                    <text class="good-number">3</text>获赞
+                    <text class="good-number">
+                        {{userInfo != null ? userInfo.goodnumber : 0}}
+                    </text>获赞
                 </view>
                 <view>
-                    <text class="pay-class">20</text>关注
+                    <text class="pay-class">
+                        {{userInfo != null ? userInfo.carenumber : 0}}
+                    </text>关注
                 </view>
             </view>
 
         </view>
 
         <!--    其他工具    -->
-
     </view>
 
     <!--  作品栏  -->
@@ -110,21 +116,33 @@
 </scroll-view>
 
         <!-- DrawerClose -->
-<view class="DrawerClose {{modalName === 'viewModal'?'show':''}}" bindtap="hideModal">
+<view class="DrawerClose {{modalName === 'viewModal'?'show':''}}"
+      bindtap="hideModal">
     <text class="cuIcon-pullright"></text>
 </view>
 
         <!-- Drawer 部分 -->
-<scroll-view class="DrawerWindow {{modalName === 'viewModal'?'show':''}} bg-gradual-blue">
+<scroll-view
+        class="DrawerWindow {{modalName === 'viewModal'?'show':''}} bg-gradual-blue">
 
     <!--  登录界面  -->
-    <t-login wx:if="{{isLogin}}"></t-login>
+    <t-login wx:if="{{!isLogin}}"
+             bind:displayToast="showToast"
+             bind:getQQUserInfo="getQQUserInfo"
+             bind:getWxUserInfo="getWxUserInfo"
+             bind:hideModal="hideModal">
+    </t-login>
 
     <!-- 登录过后显示的页面 -->
-    <t-login-list wx:if="{{!isLogin}}"></t-login-list>
-
+    <t-login-list wx:if="{{isLogin}}">
+    </t-login-list>
 
 </scroll-view>
+
+<t-toast
+        content="{{toastContext}}"
+        isToastHidden="{{isToastHidden}}"
+></t-toast>
 
 
 
