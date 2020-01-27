@@ -1,0 +1,25 @@
+<view class="t-cu-model" hidden="{{isModalHidden}}">
+
+    <view class="t-cu-dialog bg-white" style="top:{{top}}%">
+
+        <view class="title">
+            <text class="title-text">{{title}}</text>
+            <text class="cuIcon-close text-red closed"
+                  bind:tap="clickClosed"></text>
+        </view>
+
+        <view class="body">
+            <textarea placeholder="{{placeholder}}"
+                      value="{{content}}"
+                      auto-focus="{{true}}"
+                      bindinput="handlerInputChange"></textarea>
+        </view>
+
+        <view class="bottom">
+            <button class="cu-btn round bg-blue" bind:tap="handlerConfirm">发送</button>
+            <button class="cu-btn round bg-blue" bind:tap="clearContent">清空</button>
+        </view>
+
+    </view>
+
+</view>

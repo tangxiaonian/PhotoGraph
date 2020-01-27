@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "t-navbar": "/component/common/t-navbar/t-navbar",
+    "t-model": "/component/common/t-model/t-model"
+  },
+  "navigationStyle":"custom"
+}

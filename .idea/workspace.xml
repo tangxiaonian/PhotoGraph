@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e025f87b-8050-4732-8447-8598dec52a16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/network/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/info/infoRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/network/public/publicRequest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/StorageUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/info.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/public/publicRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/network/public/publicRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/public/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/public/public.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.wxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -53,7 +47,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="G:\软件\WebStorm 2019.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -142,7 +136,11 @@
       <workItem from="1579853083009" duration="447000" />
       <workItem from="1579854456542" duration="127000" />
       <workItem from="1579854606233" duration="310000" />
-      <workItem from="1579854926602" duration="7385000" />
+      <workItem from="1579854926602" duration="10646000" />
+      <workItem from="1579916272639" duration="2461000" />
+      <workItem from="1579920010111" duration="11286000" />
+      <workItem from="1580027135317" duration="712000" />
+      <workItem from="1580088739790" duration="9106000" />
     </task>
     <task id="LOCAL-00001" summary="详情页开始增加表情面板">
       <created>1577785119682</created>
@@ -214,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579077527604</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="发布功能">
+      <created>1579877721263</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1579877721263</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +261,7 @@
     <MESSAGE value="通知页面完毕" />
     <MESSAGE value="热榜页,主题页大致模型完成" />
     <MESSAGE value="整体界面的基本完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="整体界面的基本完成" />
+    <MESSAGE value="发布功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="发布功能" />
   </component>
 </project>

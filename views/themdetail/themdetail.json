@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "t-navbar": "/component/common/t-navbar/t-navbar",
+    "t-card": "/component/content/t-card/t-card",
+    "t-card-case": "/component/content/t-card-case/t-card-case",
+    "t-top": "/component/common/t-top/t-top"
+  },
+  "navigationStyle": "custom"
+}

@@ -1,5 +1,5 @@
-// views/public/public.js
-import {fileUpload, publishEssay} from "../../network/public/publicRequest";
+import {deleteFile, publishEssayRequest} from "../../network/public/publicRequest";
+import {HTTP_BASE_URL} from "../../network/index";
 import {StorageUtils} from "../../utils/StorageUtils";
 
 Page({
@@ -20,10 +20,11 @@ Page({
         location: "", //选择的位置
 
         theme: {   // 主题内容
-          context: "",
-          id: 2
+            context: "",
+            id: 2
         },
-        content: "" // textarea 的内容
+        content: "", // textarea 的内容
+        pictures: [] // 上传的图片
     },
 
     /**
@@ -33,7 +34,7 @@ Page({
 
     },
     // 点击发布按钮
-    handlerPublish(event) {
+     handlerPublish(event) {
 
         if (this.data.isCover) {
 
@@ -46,13 +47,13 @@ Page({
         }
         // 选择了主题
         if (this.data.theme.context) {
-            // 上传文件
-            this.data.imgList.length > 0 && fileUpload({
-                file: []
-            }, (result) => {
-                console.log(result);
-            })
+
             // 上传发布的内容信息
+
+            // publishEssay();
+
+            console.log("上传发布的内容...")
+
         } else {
             wx.showToast({
                 icon: "none",
@@ -62,11 +63,39 @@ Page({
     },
 
     //*************网络请求****************
+    /*
+      文件上传
+     */
+    uploadFile(filePath) {
+
+         return new Promise(((resolve, reject) => {
+
+            StorageUtils.get("token", (result) => {
+
+                wx.uploadFile({
+                    url: HTTP_BASE_URL + "/essay/upload/single",
+                    name: 'file',
+                    filePath,
+                    header: {
+                        "Content-Type": "multipart/form-data",
+                        authorization: result.data
+                    },
+                    success:resolve,
+                    fail: reject
+                });
+
+            });
+
+        }));
+    },
+    /*
+        发布
+     */
     publishEssay() {
 
         StorageUtils.get("user", (result) => {
 
-            publishEssay({
+            publishEssayRequest({
                 location: this.data.location,
                 isCover: this.data.isCover ? 1 : 0,
                 content: this.data.content,
@@ -150,6 +179,14 @@ Page({
 
                 this.data.imgList.push(...result.tempFilePaths);
 
+                // 上传图片
+                this.uploadFile(result.tempFilePaths[0]).then((result) => {
+
+                    this.data.pictures.push(JSON.parse(result.data).data);
+
+
+                });
+
                 this.setData({
                     imgList: [...this.data.imgList]
                 });
@@ -163,7 +200,17 @@ Page({
 
         let index = event.currentTarget.dataset.index - '0';
 
-        let newArr = this.data.imgList.splice(index, 1);
+        this.data.imgList.splice(index, 1);
+
+        let filePath = this.data.pictures.splice(index, 1)[0];
+
+        deleteFile({
+            filePath
+        },(result) => {
+            console.log(result);
+        },(fail) => {
+            console.log(fail);
+        });
 
         this.setData({
             imgList: [...this.data.imgList]

@@ -1,0 +1,14 @@
+// 计算年龄
+var calculateAge = function (date){
+
+  // let endDate = new Date().getFullYear();
+
+  // let startDate = new Date().getFullYear();
+
+  // return endDate - startDate;
+
+}
+
+module.exports = {
+  calculateAge: calculateAge
+};

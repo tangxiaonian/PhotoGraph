@@ -1,0 +1,15 @@
+<view class="hover-ball">
+
+    <view class="hover-ball-item-1">
+        <text>点</text>
+    </view>
+
+    <view class="hover-ball-item-2">
+        <view class="iconfont icon-fabiaoyouji"></view>
+    </view>
+
+    <view class="hover-ball-item-3">
+        <view class="iconfont icon-gerenxinxi1"></view>
+    </view>
+
+</view>

@@ -1,0 +1,39 @@
+<!--pages/info/childCompo/t-login/t-login.wxml-->
+<view class="login-box">
+
+    <view class="login">
+
+        <view class="login-item">
+            <text decode="{{true}}">账&nbsp;&nbsp;&nbsp;&nbsp;号</text>
+            <input type="text"
+                   bind:input="qqInputChange"
+                   placeholder="请输入QQ邮箱xxx@qq.com"
+                   placeholder-class="placeholderClass"/>
+        </view>
+
+        <view class="login-item yzm-item">
+            <text>验证码</text>
+            <input type="text"
+                   bind:input="verificationCodeInputChange"
+                   placeholder="请输入验证码"
+                   placeholder-class="placeholderClass"/>
+            <button class="cu-btn round sm yzm" bind:tap="getVerificationCode">获取验证码</button>
+        </view>
+
+        <view class="other"> <text>关于我们</text>   <text>忘记密码</text> </view>
+
+        <view class="btn-group">
+
+            <button class="qqLogin" size="default" type="primary" bind:tap="qqLogin">QQ邮箱登陆</button>
+
+            <button class="wxLogin"
+                    size="default"
+                    open-type="getUserInfo"
+                    bind:getuserinfo="wxGetUserInfo"
+                    type="warn">使用微信授权登录</button>
+
+        </view>
+
+    </view>
+
+</view>

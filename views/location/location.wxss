@@ -1,0 +1,4 @@
+/* views/location/location.wxss */
+.location-class{
+    width: 100vw;
+}

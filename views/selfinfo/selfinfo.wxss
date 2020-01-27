@@ -1,0 +1,31 @@
+/* views/selfinfo/selfinfo.wxss */
+
+.avatar{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 5%;
+}
+
+.info-bg{
+    width: 150rpx;
+    height: 150rpx;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.info-bg:before {
+    content: "更换";
+    display: inline-block;
+    width: 150rpx;
+    height: 150rpx;
+    color: white;
+    text-align: center;
+    line-height: 150rpx;
+    background-color: rgba(136,136,136,.5);
+}

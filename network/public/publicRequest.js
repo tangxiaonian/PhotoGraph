@@ -1,28 +1,26 @@
 import {HTTP_BASE_URL, request} from "../index";
 
 /*
-    文件上传接口
+    说说发布接口
  */
-export function fileUpload(data, successFun, failFun) {
+export function publishEssayRequest(data, successFun, failFun) {
+
     request({
-        url: HTTP_BASE_URL + "/essay/upload",
-        method: "POST",
-        data,
-        header:{
-            "Content-Type":"multipart/form-data"
-        }
+        url: HTTP_BASE_URL + "/essay/publish",
+        method: "PUT",
+        data
     }).then(successFun).catch(failFun);
 
 }
 
 /*
-    说说发布接口
+    文件删除接口
  */
-export function publishEssay(data, successFun, failFun) {
+export function deleteFile(data, successFun, failFun) {
 
     request({
-        url: HTTP_BASE_URL + "/essay/publish",
-        method: "PUT",
+        url: HTTP_BASE_URL + "/essay/delete/file",
+        method: "GET",
         data
     }).then(successFun).catch(failFun);
 

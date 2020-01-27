@@ -1,0 +1,39 @@
+<!--  顶部导航栏  -->
+<t-navbar>
+
+    <view slot="left">
+        <text class="cuIcon-back"></text>
+        <text>返回</text>
+    </view>
+
+    <view slot="center">个人信息</view>
+
+</t-navbar>
+
+<form>
+    <view class="cu-form-group">
+        <view class="title">头像</view>
+        <view>
+            <image class="avatar" src="https://shouheng.oss-cn-beijing.aliyuncs.com/photo/theme/timg.jpg"></image>
+        </view>
+    </view>
+    <view class="cu-form-group">
+        <view class="title">姓名</view>
+        <view>唐小年</view>
+    </view>
+    <view class="cu-form-group">
+        <view class="title">年龄</view>
+        <view>18</view>
+    </view>
+    <view class="cu-form-group align-start">
+        <view class="title">个性签名</view>
+        <input type="text"
+               maxlength="50"
+               placeholder="签名..." style="margin-top:27rpx"/>
+        <span style="margin-top:27rpx">50</span>
+    </view>
+    <view class="cu-form-group">
+        <view class="title">背景墙图片</view>
+        <view class="info-bg" style="background-image: url(https://shouheng.oss-cn-beijing.aliyuncs.com/photo/default_bg.png);"></view>
+    </view>
+</form>

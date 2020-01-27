@@ -1,0 +1,151 @@
+/* views/commentdetail/commentdetail.wxss */
+.commentdetail-title{
+
+    width: 100%;padding: 10rpx;
+    font-size: 25px;
+    color: #333;
+    background-color: white;
+    margin-bottom: 2px;
+}
+
+.commentdetail-title .title{
+    color: var(--blue);
+    font-size: 20px;
+}
+/*  */
+.reply-title{
+    display: flex;
+    align-items: center;
+    padding: 10rpx;
+    background-color: white;
+}
+
+.reply-title .name{
+    margin: 10rpx;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.reply-title .attention{
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reply-title .attention_text{
+    width: 25%;
+    float: right;
+    color: var(--blue);
+    background-color: #DBDBDB;
+    padding: 10rpx;
+}
+
+/*内容*/
+.reply-content{
+    padding: 10rpx 20rpx;
+    min-height: 200rpx;
+    font-size: 17px;
+    background-color: white;
+}
+
+.reply-content-make{
+    padding: 10rpx;
+    background-color: white;
+    margin-bottom: 2px;
+}
+
+.avater-img{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.reply-content-make{
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx;
+}
+
+/* 回复 */
+.reply-input{
+    display: flex;
+    padding: 20rpx;
+    height: 100rpx;
+    background-color: white;
+}
+
+.reply-input .left{
+    flex: 1;
+    margin: 0 10rpx 0 5rpx;
+    padding-left: 10rpx;
+    border: 1px solid #888888;
+    border-radius: 100rpx;
+}
+
+.reply-input .right {
+    width: 150rpx;
+    text-align: center;
+    border: 1px solid #888888;
+    border-radius: 100rpx;
+}
+
+.cu-btn-send{
+    width: 150rpx;
+    height: 100%;
+    line-height: 50rpx;
+}
+
+/* 回复列表 */
+
+.comment{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.comment-item{
+    border-bottom: 1px solid #ededed;
+    margin: 10rpx;
+}
+.comment-item-top{
+    display: flex;
+    align-items: center;
+}
+.comment-item-top .t_avatar{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 60rpx;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.comment-item-top .t_name{
+    flex: 1;
+    margin: 10rpx;
+    color: blue;
+}
+.comment-item-top .t_good{
+    font-size: 23px;
+}
+
+.comment-item-content{
+    padding-left: 60rpx;
+    margin: 10rpx 0;
+}
+
+.comment-item-bottom {
+    padding-left: 60rpx;
+}
+
+.comment-item-bottom .t_time{
+    color: #B1B1B1;
+}
+.comment-item-bottom .t_receive{
+    margin-left: 20rpx;
+    color: var(--blue);
+}

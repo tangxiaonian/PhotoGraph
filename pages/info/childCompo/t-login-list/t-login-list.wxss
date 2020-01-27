@@ -1,0 +1,23 @@
+/* pages/info/childCompo/t-login-list/t-login-list.wxss */
+
+.self_list{
+    margin-top: 40%;
+}
+
+/* 侧面头像 */
+.t_avatar_{
+    text-align: center;
+    margin-top: 10rpx;
+}
+
+.t_avatar_ image{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+}
+
+.content_ .iconfont{
+    display: inline-block;
+    margin-right: 20rpx;
+    color: #333;
+}

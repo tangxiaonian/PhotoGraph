@@ -1,0 +1,55 @@
+/* component/common/t-model/t-model.wxss */
+/* 模态框 */
+.t-cu-model{
+    position: fixed;
+    left: 0;top: 0;
+    right: 0;bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    /* 模态框背景色是使用 颜色填充的 */
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.t-cu-dialog{
+    position: absolute;
+    top: 30%;
+    left: 0;right: 0;
+    width: 80%;
+    min-height: 200rpx;
+    margin: auto;padding: 30rpx;
+    background: #f8f8f8;
+    border-radius: 10rpx;
+}
+.title{
+    text-align: center;
+    margin: 0 10rpx;
+}
+.body{
+    height: 150rpx;
+}
+.title .title-text{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.title .closed{
+    float: right
+}
+
+.body textarea{
+
+    width: 100%;
+    height: 100%;
+
+}
+/* 按钮 */
+.bottom{
+    display: flex;
+    justify-content: flex-end;
+}
+.bottom button{
+    width: 150rpx;
+    height: 60rpx;
+    margin:  0 5rpx;
+    min-height: 0;
+}

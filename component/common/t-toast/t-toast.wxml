@@ -1,0 +1,23 @@
+<!--component/common/t-toast/t-toast.wxml-->
+<view class="t-toast-modal" hidden="{{isToastHidden}}">
+
+    <view class="toast-body">
+
+        <view class="toast-title">
+            <text>消息</text>
+        </view>
+
+        <view class="toast-content">
+            <text>{{content}}</text>
+        </view>
+
+        <view class="toast-bottom">
+
+            <view class="bg-green btn-my sm"
+                  bind:tap="handlerClick">确认</view>
+
+        </view>
+
+    </view>
+
+</view>

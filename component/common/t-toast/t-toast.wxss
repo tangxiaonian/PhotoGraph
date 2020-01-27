@@ -1,0 +1,49 @@
+/* component/common/t-toast/t-toast.wxss */
+.t-toast-modal{
+    position: fixed;
+    left: 0;top: 0;
+    right: 0;bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.toast-body{
+    position: relative;
+    top: 50%;left: 50%;
+    width: 400rpx;
+    /*height: 200rpx;*/
+    background-color: var(--white);
+    border-radius: 5%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 3rpx 3rpx white;
+}
+
+.toast-title{
+    padding: 5rpx;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.toast-content{
+    padding: 10rpx;
+    margin: 20rpx 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.toast-bottom{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10rpx;
+    font-size: 15px;
+}
+
+.btn-my{
+    width: 100rpx;
+    padding: 10rpx;
+    border-radius: 10%;
+    text-align: center;
+}

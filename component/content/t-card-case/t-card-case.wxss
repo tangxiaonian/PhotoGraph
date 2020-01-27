@@ -1,0 +1,4 @@
+/* component/content/t-card-case/t-card-case.wxss */
+.cu-card>.cu-item{
+    margin: 18rpx;
+}

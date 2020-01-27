@@ -1,0 +1,19 @@
+<!-- 导航栏 -->
+<t-navbar>
+    <view slot="center">
+        春
+    </view>
+</t-navbar>
+
+<t-top bind:goTop="goTop"
+       hidden="{{isTophidden}}"></t-top>
+
+<scroll-view scroll-y
+             scroll-top="{{scrollTop}}"
+             style="height:{{windowHeight - navbarHeight}}px;">
+
+    <t-card></t-card>
+
+    <t-card-case></t-card-case>
+
+</scroll-view>

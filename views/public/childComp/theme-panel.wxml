@@ -1,0 +1,38 @@
+<!--views/public/childComp/theme-panel.wxml-->
+<view class="theme-panel" hidden="{{isHidden}}" bindtap="closeMake">
+
+    <view class="theme-panel-content">
+
+        <view class="theme-title">
+
+            <view>
+                <button size="mini"
+                        hover-class="other-button-hover"
+                        catch:tap="cancelClick">取消</button>
+            </view>
+
+            <view>
+                <button size="mini"
+                        hover-class="other-button-hover"
+                        catch:tap="confirmClick">确定</button>
+            </view>
+
+        </view>
+
+        <scroll-view scroll-y>
+
+            <view class="theme-content">
+
+                <view class="item {{currentIndex === index ? 'active' : ''}}"
+                      catch:tap="clientItem"
+                      data-index="{{index}}"
+                      wx:for="{{themes}}"
+                      wx:key="index">{{item}}</view>
+            </view>
+
+        </scroll-view>
+
+    </view>
+
+
+</view>
