@@ -1,4 +1,4 @@
-<view class="self_list">
+<view class="self_list" wx:if="{{userInfo}}">
 
     <!--  list列表  -->
     <view class="cu-bar solid-bottom margin-top" wx:if="{{!isLogin}}">
@@ -8,7 +8,7 @@
             <view class="cu-item">
                 <view class="content_">
                     <view class="t_avatar_">
-                        <image src="/assert/img/1.jpeg"></image>
+                        <image src="{{userInfo.avatarUrl}}"></image>
                     </view>
                 </view>
             </view>
@@ -34,7 +34,6 @@
                 </view>
             </view>
 
-
             <view class="cu-item arrow">
                 <view class="content_">
                     <text class="iconfont icon-zuozhe"></text>
@@ -42,7 +41,7 @@
                 </view>
             </view>
 
-            <view class="cu-item arrow">
+            <view class="cu-item arrow" bind:tap="loginOut">
                 <view class="content_">
                     <text class="iconfont icon-dengchu"></text>
                     <text class="text-grey">退出登录</text>

@@ -46,14 +46,9 @@ Page({
             }
         }
         // 选择了主题
-        if (this.data.theme.context) {
-
+        if (this.data.theme.id) {
             // 上传发布的内容信息
-
-            // publishEssay();
-
-            console.log("上传发布的内容...")
-
+            this.publishEssay();
         } else {
             wx.showToast({
                 icon: "none",
@@ -70,21 +65,19 @@ Page({
 
          return new Promise(((resolve, reject) => {
 
-            StorageUtils.get("token", (result) => {
+            let token = StorageUtils.get("token");
 
-                wx.uploadFile({
-                    url: HTTP_BASE_URL + "/essay/upload/single",
-                    name: 'file',
-                    filePath,
-                    header: {
-                        "Content-Type": "multipart/form-data",
-                        authorization: result.data
-                    },
-                    success:resolve,
-                    fail: reject
-                });
-
-            });
+             wx.uploadFile({
+                 url: HTTP_BASE_URL + "/essay/upload/single",
+                 name: 'file',
+                 filePath,
+                 header: {
+                     "Content-Type": "multipart/form-data",
+                     authorization: token
+                 },
+                 success:resolve,
+                 fail: reject
+             });
 
         }));
     },
@@ -93,21 +86,22 @@ Page({
      */
     publishEssay() {
 
-        StorageUtils.get("user", (result) => {
+        let userInfo = StorageUtils.get("user");
 
-            publishEssayRequest({
-                location: this.data.location,
-                isCover: this.data.isCover ? 1 : 0,
-                content: this.data.content,
-                themid: this.data.theme.id,
-                uid: result.data.id,
-                pictures: this.data.imgList
-            }, (result_) => {
-                console.log(result_);
-            }, (fail_) => {
-                console.log(fail_);
+        publishEssayRequest({
+            location: this.data.location,
+            isCover: this.data.isCover ? 1 : 0,
+            content: this.data.content,
+            themid: this.data.theme.id,
+            uid: userInfo.id,
+            pictures: this.data.pictures.join(",")
+        }, (result) => {
+            wx.showToast({
+                title:result.data.message,
+                icon: "none"
             });
-
+        }, (fail_) => {
+            console.log(fail_);
         });
 
     },
@@ -153,7 +147,7 @@ Page({
     receiveTheme(event) {
 
         this.setData({
-            theme: event.detail
+            theme: event.detail.theme
         })
 
     },
@@ -183,7 +177,6 @@ Page({
                 this.uploadFile(result.tempFilePaths[0]).then((result) => {
 
                     this.data.pictures.push(JSON.parse(result.data).data);
-
 
                 });
 

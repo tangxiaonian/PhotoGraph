@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e025f87b-8050-4732-8447-8598dec52a16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/theme/themeRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/network/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/info/infoRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/network/info/infoRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/network/public/publicRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/network/public/publicRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/childCompo/t-login-list/t-login-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/childCompo/t-login-list/t-login-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/childCompo/t-login-list/t-login-list.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/childCompo/t-login-list/t-login-list.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/childCompo/t-login/t-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/childCompo/t-login/t-login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/info/info.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/StorageUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/StorageUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/public/childComp/theme-panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/childComp/theme-panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/public/childComp/theme-panel.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/childComp/theme-panel.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/public/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/public/public.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/selfinfo/selfinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/selfinfo/selfinfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -141,6 +154,10 @@
       <workItem from="1579920010111" duration="11286000" />
       <workItem from="1580027135317" duration="712000" />
       <workItem from="1580088739790" duration="9106000" />
+      <workItem from="1580297493700" duration="7612000" />
+      <workItem from="1580361279171" duration="5973000" />
+      <workItem from="1580787444122" duration="4660000" />
+      <workItem from="1580881734142" duration="15348000" />
     </task>
     <task id="LOCAL-00001" summary="详情页开始增加表情面板">
       <created>1577785119682</created>

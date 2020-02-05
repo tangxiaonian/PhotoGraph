@@ -41,11 +41,12 @@
         <view class="theme-title"
               wx:if="{{theme.context !== ''}}">
             所选择主题:
-            <text style="color:var(--blue);font-weight: bold;">{{theme.context}}</text>
+            <text style="color:var(--blue);font-weight: bold;">{{theme.name}}</text>
         </view>
 
         <view class="theme-location"
               wx:if="{{location !== ''}}">
+            位置:
             <text style="color:var(--blue);font-weight: bold;">{{location}}</text>
         </view>
     </view>

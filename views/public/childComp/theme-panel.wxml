@@ -27,7 +27,7 @@
                       catch:tap="clientItem"
                       data-index="{{index}}"
                       wx:for="{{themes}}"
-                      wx:key="index">{{item}}</view>
+                      wx:key="index">{{item.name}}</view>
             </view>
 
         </scroll-view>

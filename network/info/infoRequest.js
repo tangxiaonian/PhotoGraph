@@ -34,3 +34,25 @@ export function requestWxLogin(data,successFun, failFun) {
     }).then(successFun)
         .catch(failFun);
 }
+
+/*
+    登出
+ */
+export function loginOutRequest(data, successFun, failFun) {
+    request({
+        url:HTTP_BASE_URL + "/users/loginOut",
+        data,
+        method: "GET"
+    }).then(successFun).catch(failFun);
+}
+
+/*
+    更新用户信息
+ */
+export function updateUserInfoRequest(data, successFun, failFun) {
+    request({
+        url: HTTP_BASE_URL + "/users/update",
+        data,
+        method: "POST"
+    }).then(successFun).catch(failFun);
+}

@@ -6,7 +6,7 @@
     border-radius: 5%;
 }
 
-.info-bg{
+.info-bg,.avater-bg{
     width: 150rpx;
     height: 150rpx;
     background-size: cover;
@@ -19,7 +19,7 @@
     font-weight: bold;
 }
 
-.info-bg:before {
+.avater-bg:before,.info-bg:before {
     content: "更换";
     display: inline-block;
     width: 150rpx;

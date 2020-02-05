@@ -48,14 +48,12 @@ Page({
     },
     // 获取界面元素的高度
     initHeight() {
-
         this.createSelectorQuery()
             .select("#info-body")
             .boundingClientRect()
             .exec((res) => {
                 this.data.infoBodyTop = res[0].top;
             });
-
         this.createSelectorQuery()
             .select("#switchTab")
             .boundingClientRect()
@@ -65,20 +63,32 @@ Page({
     },
     // 获取 QQ邮箱登陆的用户信息
     getQQUserInfo() {
-       StorageUtils.get("user", (result) => {
-           this.setData({
-               userInfo: result.data,
-               isLogin: true
-           });
-        });
+        this.getUserInfo();
     },
     // 获取 微信登陆的用户信息
     getWxUserInfo() {
-        StorageUtils.get("user", (result) => {
-            this.setData({
-                userInfo: result.data,
-                isLogin: true
-            });
+        this.getUserInfo();
+    },
+    // 登出
+    loginOut() {
+
+        this.setData({
+            userInfo: null,
+            isLogin: false
+        });
+
+        this.hideModal();
+    },
+    // 获取用户信息
+    getUserInfo() {
+
+        let userInfo = StorageUtils.get("user");
+
+        userInfo.age = new Date().getFullYear() - new Date(userInfo.birthday).getFullYear();
+
+        this.setData({
+            userInfo,
+            isLogin: true
         });
     },
     hideModal(e) {
@@ -107,7 +117,6 @@ Page({
             });
 
         }
-
         // 2.滚动的距离 >= switchTabTop - 自定义的navbar的高度时 让 switchTab的swiper可以滚动
         if (scrollTop >= (switchTabTop - this.data.customNavBarHeight)) {
 

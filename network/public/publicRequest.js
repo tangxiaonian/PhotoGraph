@@ -9,7 +9,8 @@ export function publishEssayRequest(data, successFun, failFun) {
         url: HTTP_BASE_URL + "/essay/publish",
         method: "PUT",
         data
-    }).then(successFun).catch(failFun);
+    }).then(successFun)
+        .catch(failFun);
 
 }
 

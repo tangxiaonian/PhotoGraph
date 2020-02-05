@@ -1,23 +1,14 @@
 export const StorageUtils = {
-    get(key,successFun) {
-        wx.getStorage({
-            key,
-            success:successFun
-        });
+    get(key) {
+        return wx.getStorageSync(key);
     },
     set(key, value) {
-        wx.setStorage({
-            key,
-            data: value
-        });
+        wx.setStorageSync(key, value);
     },
-    remove(key,successFun) {
-        wx.removeStorage({
-            key,
-            success:successFun
-        });
+    remove(key) {
+        wx.removeStorageSync(key);
     },
     clear() {
-        wx.clearStorage();
+        wx.clearStorageSync();
     }
 };

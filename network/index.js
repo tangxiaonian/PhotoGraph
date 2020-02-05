@@ -2,11 +2,9 @@ import {StorageUtils} from "../utils/StorageUtils";
 
 export function request(config) {
 
-    let token = "";
+    config.header = config.header ? config.header : {};
 
-    StorageUtils.get("token", (result) => {
-        token = result.data;
-    });
+    let token = StorageUtils.get("token");
 
     if (token) {
         config.header.authorization = token;

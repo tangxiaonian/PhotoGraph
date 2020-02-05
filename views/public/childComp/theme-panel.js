@@ -1,4 +1,6 @@
 // views/public/childComp/theme-panel.js
+import {getThemes} from "../../../network/theme/themeRequest";
+
 Component({
   /**
    * 组件的属性列表
@@ -17,9 +19,19 @@ Component({
   data: {
 
     themes: [
-      "生活", "四季", "美照", "宠物"
     ],
     currentIndex: -1
+  },
+  "lifetimes": {
+    attached() {
+      getThemes((result) => {
+        this.setData({
+          themes: result.data
+        });
+      }, (fail) => {
+        console.log(fail);
+      });
+    }
   },
 
   /**
@@ -56,10 +68,8 @@ Component({
       if (this.data.currentIndex !== -1) {
 
         this.triggerEvent("receiveTheme", {
-          context: this.data.themes[this.data.currentIndex],
-          id: this.data.currentIndex
+          theme: this.data.themes[this.data.currentIndex],
         });
-
         this.cancelClick();
 
       } else {

@@ -103,6 +103,8 @@ Component({
         // wx 登录
         wxGetUserInfo(event) {
 
+            console.log("微信登录...");
+
             let user = event.detail.userInfo;
 
             requestWxLogin({
@@ -120,16 +122,12 @@ Component({
                 this.triggerEvent("hideModal");
 
                 // 通知渲染用户信息
-                this.triggerEvent("getWxUserInfo")
+                this.triggerEvent("getWxUserInfo");
 
             }, (fail) => {
-
                 console.log(fail);
-
             });
-
         },
-
         qqInputChange(event) {
 
             this.setData({
@@ -137,7 +135,6 @@ Component({
             });
 
         },
-
         verificationCodeInputChange(event) {
 
             this.setData({
@@ -145,6 +142,5 @@ Component({
             });
 
         }
-
     }
 });

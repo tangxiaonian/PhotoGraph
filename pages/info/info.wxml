@@ -134,7 +134,10 @@
     </t-login>
 
     <!-- 登录过后显示的页面 -->
-    <t-login-list wx:if="{{isLogin}}">
+    <t-login-list
+            wx:if="{{isLogin}}"
+            bind:loginOut="loginOut"
+            userInfo="{{userInfo}}">
     </t-login-list>
 
 </scroll-view>
