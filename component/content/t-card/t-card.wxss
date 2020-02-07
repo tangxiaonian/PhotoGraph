@@ -1,1 +1,11 @@
 /* component/content/t-card/t-card.wxss */
+.cu-card .bg-img{
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.theme_name{
+    text-align: right;
+    flex: 1;
+    color: #aaaaaa;
+}

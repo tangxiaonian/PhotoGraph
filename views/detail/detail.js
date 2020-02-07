@@ -29,7 +29,9 @@ Page({
 
     tCommentBarInstance: null
   },
-  onLoad() {
+  onLoad(option) {
+
+    console.log(option);
 
     this.loadProgress();
 

@@ -2,24 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e025f87b-8050-4732-8447-8598dec52a16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/network/theme/themeRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/index/indexRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/network/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/info/infoRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/network/info/infoRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/public/publicRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/network/public/publicRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/childCompo/t-login-list/t-login-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/childCompo/t-login-list/t-login-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/childCompo/t-login-list/t-login-list.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/childCompo/t-login-list/t-login-list.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/childCompo/t-login/t-login.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/childCompo/t-login/t-login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/info.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/StorageUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/StorageUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/public/childComp/theme-panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/childComp/theme-panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/public/childComp/theme-panel.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/childComp/theme-panel.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/public/public.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/public/public.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/public/public.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/content/t-card/t-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-card/t-card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/content/t-card/t-card.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-card/t-card.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/content/t-card/t-card.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-card/t-card.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail/detail.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/selfinfo/selfinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/selfinfo/selfinfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wxs/common.wxs" beforeDir="false" afterPath="$PROJECT_DIR$/wxs/common.wxs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +150,9 @@
       <workItem from="1580297493700" duration="7612000" />
       <workItem from="1580361279171" duration="5973000" />
       <workItem from="1580787444122" duration="4660000" />
-      <workItem from="1580881734142" duration="15348000" />
+      <workItem from="1580881734142" duration="15647000" />
+      <workItem from="1580983272513" duration="6967000" />
+      <workItem from="1581078325915" duration="10358000" />
     </task>
     <task id="LOCAL-00001" summary="详情页开始增加表情面板">
       <created>1577785119682</created>

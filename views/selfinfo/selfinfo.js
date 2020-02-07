@@ -66,9 +66,7 @@ Page({
     改变年龄
    */
   bindChange(event) {
-
     let age = (new Date().getFullYear() - this.data.birthday[event.detail.value]);
-
     this.setData({
       "userInfo.age": age,
       "userInfo.birthday": new Date(this.data.birthday[event.detail.value])
@@ -82,9 +80,7 @@ Page({
 
     updateUserInfoRequest(this.data.userInfo,
         (result)=>{
-
       StorageUtils.set("user", this.data.userInfo);
-
     },(result)=>{
       console.log(result);
     });

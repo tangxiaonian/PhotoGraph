@@ -2,6 +2,10 @@
 
     <!-- 导航栏 -->
     <t-navbar>
+        <view slot="left">
+            <text class="cuIcon-back"></text>
+            <text>返回</text>
+        </view>
         <view slot="center" bgColor="--gradualOrange">
             详情页
         </view>

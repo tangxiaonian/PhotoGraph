@@ -1,14 +1,8 @@
 // 计算年龄
-var calculateAge = function (date){
-
-  // let endDate = new Date().getFullYear();
-
-  // let startDate = new Date().getFullYear();
-
-  // return endDate - startDate;
-
-}
+var dateFormat = function (str) {
+  return str.match(getRegExp("(\\d)*-(\\d)*-(\\d)*"))[0];
+};
 
 module.exports = {
-  calculateAge: calculateAge
+  dateFormat: dateFormat
 };
