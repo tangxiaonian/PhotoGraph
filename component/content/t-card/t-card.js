@@ -26,7 +26,7 @@ Component({
   methods: {
 
     previewImg(event) {
-      console.log( event.currentTarget.dataset.index )
+
       wx.previewImage({
         urls: this.data.essay.pictures,
         current: this.data.essay.pictures[event.currentTarget.dataset.index]
@@ -35,7 +35,7 @@ Component({
     },
     goEssayDetail() {
       wx.navigateTo({
-        url:"/views/detail/detail?id" + this.data.essay.id
+        url:"/views/detail/detail?id=" + this.data.essay.id
       })
     }
   },

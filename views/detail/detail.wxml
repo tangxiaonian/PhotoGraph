@@ -20,11 +20,11 @@
           style="top:{{navbarHeight}}px">
         <view class="cu-item">
             <view class="cu-avatar round lg"
-                  style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+                  style="background-image:url({{essay.users.avatarUrl}});"></view>
             <view class="content flex-sub">
-                <view>凯尔</view>
+                <view>{{essay.users.username}}</view>
                 <view class="text-gray text-sm flex justify-between">
-                    2019年12月3日
+                    {{essay.createdtime}}
                 </view>
             </view>
             <view class="left-btn-class">
@@ -52,12 +52,11 @@
                 <view class="cu-list menu-avatar">
                     <view class="cu-item">
                         <view class="cu-avatar round lg"
-                              style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+                              style="background-image:url({{essay.users.avatarUrl}});"></view>
                         <view class="content flex-sub">
-                            <view>凯尔</view>
+                            <view>{{essay.users.username}}</view>
                             <view class="text-gray text-sm flex justify-between">
-                                2019年12月3日
-                            </view>
+                            {{essay.createdtime}}</view>
                         </view>
                         <view class="left-btn-class">
                             <text>关注</text>
@@ -66,25 +65,29 @@
                 </view>
                 <!--内容 (抽取)-->
                 <view class="text-content">
-                    折磨生出苦难，苦难又会加剧折磨，凡间这无穷的循环，将有我来终结！
+                    {{essay.content}}
                 </view>
 
                 <view class="grid flex-sub padding-lr col-1">
 
-                    <view class="bg-img only-img"
-                          style="background-image:url(/assert/img/test/big10006.jpg);">
-                    </view>
+                    <view class="bg-img only-img picture_item"
+                            wx:for="{{essay.pictures}}" wx:key="item"
+                            data-index="{{index}}"
+                            catch:tap="previewImg"
+                            style="background-image:url({{item}});background-size: contain;">
 
-                    <view class="bg-img only-img"
-                          style="background-image:url(/assert/img/test/big10006.jpg);">
+                    <view class="iconfont icon-xiazai down_icon"
+                            data-index="{{index}}"
+                            catch:tap="downloadImg"></view>
+
                     </view>
 
                 </view>
                 <!---->
                 <view class="text-gray text-xl text-right padding">
-                    <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
-                    <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
-                    <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+                    <text class="cuIcon-attentionfill margin-lr-xs"></text> {{essay.looknumber}}
+                    <text catch:tap="goodRequest" class="cuIcon-appreciatefill margin-lr-xs"></text> {{essay.goodnumber}}
+                    <text catch:tap="commentRequest" class="cuIcon-messagefill margin-lr-xs"></text> {{essay.commentnumber}}
                 </view>
 
                 <!--点赞列表 (抽取)-->
@@ -158,6 +161,7 @@
         bind:dispalyEmojiPanel="dispalyEmojiPanel"
         bind:hiddenEmojiPanel="hiddenEmojiPanel"
         placeholder="{{placeholder}}"
+        essayId="{{essay.id}}"
         hidden="{{isCommentBarHidden}}">
 </t-commentbar>
 

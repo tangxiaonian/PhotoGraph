@@ -8,3 +8,6 @@
     font-size: 17px;
     color: white;
 }
+.t-navbar-right{
+   width: 50rpx;
+}

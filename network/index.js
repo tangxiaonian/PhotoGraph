@@ -25,4 +25,5 @@ export function request(config) {
 
 }
 
-export const HTTP_BASE_URL = "http://localhost:7777/api";
+// export const HTTP_BASE_URL = "http://localhost:7777/api";
+export const HTTP_BASE_URL = "http://photos.nat300.top/api";

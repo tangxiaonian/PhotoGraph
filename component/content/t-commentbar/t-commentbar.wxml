@@ -47,7 +47,7 @@
     </view>
 
     <view class="right" bind:tap="sendMsg">
-        <view class="iconfont icon-fasong"></view>
+        <view class="iconfont icon-fasong" style="font-size:20px;"></view>
     </view>
 
 </view>

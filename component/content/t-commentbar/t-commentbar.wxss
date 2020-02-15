@@ -28,5 +28,6 @@
 }
 
 .right{
+    width: 50rpx;
     text-align: center;
 }

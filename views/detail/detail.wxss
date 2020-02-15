@@ -26,6 +26,16 @@
     border-radius: 150rpx;
 }
 
+.picture_item{
+    position: relative;
+}
+
+.picture_item .down_icon{
+    position: absolute;
+    right: 0;bottom: 0;
+    font-size: 57rpx;
+}
+
 /* 点赞区 */
 
 .t_good_list{

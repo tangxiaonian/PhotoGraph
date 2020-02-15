@@ -1,4 +1,7 @@
 // views/detail/childComp/t-commentbar/t-commentbar.js
+import {sendMsgRequest} from "../../../network/detail/detailRequest";
+import {StorageUtils} from "../../../utils/StorageUtils";
+
 Component({
 
     options: {
@@ -16,6 +19,10 @@ Component({
         placeholder:{
             type: String,
             value: "留点信息吧..."
+        },
+        essayId: {
+            type: Number,
+            value: 0
         }
 
     },
@@ -184,6 +191,20 @@ Component({
 
             console.log("点击了发送信息...");
 
+            sendMsgRequest({
+                essayId: this.data.essayId,
+                uid: StorageUtils.get("user")["id"],
+                msg: this.data.textContent
+            }, (result) => {
+                if (result.data.state === 200) {
+                    wx.showToast({
+                        title: "发布成功!",
+                        icon: "none"
+                    });
+                }
+            }, (fail) => {
+                console.log(fail);
+            });
 
             // 隐藏当前
             this.setData({
@@ -197,9 +218,6 @@ Component({
         },
         // 文本框数据发生改变
         bindInputChange(event) {
-
-            console.log(event);
-
             this.data.textContent = event.detail.value;
         },
         // 设置表情

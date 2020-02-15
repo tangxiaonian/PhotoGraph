@@ -1,4 +1,5 @@
 // views/detail/detail.js
+import {commentRequest, goodRequest, lookRequest, selectByIdRequest} from "../../network/detail/detailRequest";
 
 let app = getApp();
 
@@ -18,6 +19,9 @@ Page({
     SCROLLDISTANCE: 80, // 标题距离多远时浮动
     scrollTop: 0,
 
+    essay: null, // 说说详情
+    user: null,
+
     placeholder:"留点信息吧...", // tCommentBar 显示的信息
 
     isTopHidden: true, // top 按钮是否显示
@@ -31,11 +35,93 @@ Page({
   },
   onLoad(option) {
 
-    console.log(option);
+    if (option.id) {
+
+      this.selectByIdRequest(option.id);
+
+    }
+
+    lookRequest({
+      id: option.id
+    },(result) => {
+
+    },(fail) => {
+
+    });
 
     this.loadProgress();
 
     this.data.tCommentBarInstance = this.selectComponent("#t-commentbar");
+
+  },
+  goodRequest() {
+
+    goodRequest({
+      id: this.essay.id
+    },(result) => {
+
+    },(fail) => {
+
+    });
+  },
+  commentRequest() {
+    commentRequest({
+      id: this.essay.id
+    },(result) => {
+
+    },(fail) => {
+
+    });
+  },
+  /*
+      查询通过id
+   */
+  selectByIdRequest(id) {
+
+    selectByIdRequest({
+      id
+    }, (result) => {
+
+        console.log(result);
+
+      let essay =  result.data.data;
+
+      essay.createdtime = (essay.createdtime.match(/(\d)*-(\d)*-(\d)*/)[0])
+          .replace(/(\d*)-(\d*)-(\d*)/, "$1年$2月$3日");
+
+      essay.pictures = essay.pictures.split(",");
+
+      this.setData({
+        essay
+      });
+    }, (fail) => {
+      console.log(fail);
+    });
+
+  },
+  // 下载图片
+  downloadImg(event) {
+      wx.downloadFile({
+          url: this.data.essay.pictures[event.currentTarget.dataset.index],
+          success:(res) => {
+              wx.saveImageToPhotosAlbum({
+                  filePath: res.tempFilePath,
+                  success(res) {
+                      wx.showToast({
+                          title: "保存成功!",
+                          icon:"none"
+                      })
+                  }
+              })
+          }
+      });
+  },
+  previewImg(event) {
+
+    wx.previewImage({
+      urls: this.data.essay.pictures,
+      current: this.data.essay.pictures[event.currentTarget.dataset.index]
+    });
 
   },
   // 点击回复按钮

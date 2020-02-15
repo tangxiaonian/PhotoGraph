@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e025f87b-8050-4732-8447-8598dec52a16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/network/index/indexRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/detail/detailRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assert/css/photo.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/assert/css/photo.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/common/t-navbar/t-navbar.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/common/t-navbar/t-navbar.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/content/t-card/t-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-card/t-card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/content/t-card/t-card.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-card/t-card.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/content/t-card/t-card.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-card/t-card.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/content/t-commentbar/t-commentbar.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/network/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail/detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail/detail.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/selfinfo/selfinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/selfinfo/selfinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/views/selfinfo/selfinfo.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxs/common.wxs" beforeDir="false" afterPath="$PROJECT_DIR$/wxs/common.wxs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/detail/detail.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail/detail.wxss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +56,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="ts.external.directory.path" value="G:\软件\WebStorm 2019.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -152,7 +155,13 @@
       <workItem from="1580787444122" duration="4660000" />
       <workItem from="1580881734142" duration="15647000" />
       <workItem from="1580983272513" duration="6967000" />
-      <workItem from="1581078325915" duration="10358000" />
+      <workItem from="1581078325915" duration="10522000" />
+      <workItem from="1581250470148" duration="6773000" />
+      <workItem from="1581337597925" duration="2212000" />
+      <workItem from="1581427434256" duration="5731000" />
+      <workItem from="1581596163649" duration="3783000" />
+      <workItem from="1581680967560" duration="3385000" />
+      <workItem from="1581768981584" duration="581000" />
     </task>
     <task id="LOCAL-00001" summary="详情页开始增加表情面板">
       <created>1577785119682</created>
@@ -231,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579877721263</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="首页">
+      <created>1581088902637</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581088902637</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +290,7 @@
     <MESSAGE value="热榜页,主题页大致模型完成" />
     <MESSAGE value="整体界面的基本完成" />
     <MESSAGE value="发布功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="发布功能" />
+    <MESSAGE value="首页" />
+    <option name="LAST_COMMIT_MESSAGE" value="首页" />
   </component>
 </project>
